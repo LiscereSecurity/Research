@@ -1,0 +1,5 @@
+# macOS
+.DS_Store
+
+# Images (screenshots may capture unrelated desktop content)
+*.png

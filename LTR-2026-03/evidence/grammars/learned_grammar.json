@@ -1,0 +1,33 @@
+{
+  "learned_at": "2026-06-30T18:17:38",
+  "min_confidence_for_learning": 0.6,
+  "writes_skipped_low_confidence": 1,
+  "grammar": {
+    "0": {
+      "register_name": "PUMP_FLOW_SP",
+      "total_writes_observed": 10,
+      "phase_distribution": {
+        "FILLING": {
+          "count": 10,
+          "fraction": 1.0
+        }
+      },
+      "learned_coherent_phases": [
+        "FILLING"
+      ]
+    },
+    "1": {
+      "register_name": "VALVE_FLOW_SP",
+      "total_writes_observed": 10,
+      "phase_distribution": {
+        "DRAINING": {
+          "count": 10,
+          "fraction": 1.0
+        }
+      },
+      "learned_coherent_phases": [
+        "DRAINING"
+      ]
+    }
+  }
+}

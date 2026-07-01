@@ -1,0 +1,25 @@
+{
+  "learned_at": "2026-06-30T17:42:29",
+  "min_confidence_for_learning": 0.6,
+  "writes_skipped_low_confidence": 1,
+  "grammar": {
+    "0": {
+      "register_name": "PUMP_FLOW_SP",
+      "total_writes_observed": 6,
+      "phase_distribution": {
+        "FILLING": {
+          "count": 5,
+          "fraction": 0.833
+        },
+        "STABLE": {
+          "count": 1,
+          "fraction": 0.167
+        }
+      },
+      "learned_coherent_phases": [
+        "FILLING",
+        "STABLE"
+      ]
+    }
+  }
+}

@@ -1,0 +1,19 @@
+LTR-2026-03 — Degrau 1 — Evidence manifest
+
+Date: 30/06/2026
+
+PLC: Siemens S7-1200 CPU 1212C G2 (6ES7212-1AG50-0XB0), firmware 4.1.2
+
+HMI: Siemens TP700 Comfort (6AV2128-3GB06-0AX1)
+
+Switch: 3onedata IES7110-2GS-2F, port mirroring: source ports 3+5 -> dest port 6
+
+TIA Portal: V21
+
+Network: PLC=192.168.1.12, HMI=192.168.1.13, Windows(supervisor)=192.168.1.10, Mac(Liscere)=192.168.1.9, Switch=192.168.1.254
+
+Register map (measured, no off-by-one): addr0=PUMP_FLOW_SP, addr1=VALVE_FLOW_SP, addr2=ALARM_HI_SP, addr3=ALARM_LO_SP, addr5=LEVEL_AI
+
+Policy: write to PUMP_FLOW_SP is coherent only during FILLING phase; otherwise ALERT
+
+Phase inference: simple level-trend rule (Step 1; robustness deferred to Step 2)
