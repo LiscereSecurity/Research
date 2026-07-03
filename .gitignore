@@ -3,3 +3,9 @@
 
 # Images (screenshots may capture unrelated desktop content)
 *.png
+!**/report/figures/*.png
+
+# Logs / TLS keylogs / local secrets (never publish)
+*.log
+*_keys.log
+_local_secrets/

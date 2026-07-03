@@ -1,0 +1,28 @@
+// ===== Tank level dynamics =====
+// Inflow is governed by the pump setpoint (HR1) when the pump is running.
+// Outflow is governed by the valve setpoint (HR2) when the valve is open.
+IF #PumpRunning THEN
+    #inflow := INT_TO_REAL("ModbusHR_DB".HR[0]);
+ELSE
+    #inflow := 0.0;
+END_IF;
+
+IF #ValveOpen THEN
+    #outflow := INT_TO_REAL("ModbusHR_DB".HR[1]);
+ELSE
+    #outflow := 0.0;
+END_IF;
+
+// Discrete integrator: new level = old level + net flow * dt
+#LevelReal := #LevelReal + 0.01 * (#inflow - #outflow) * 0.1;
+
+// Physical interlocks: the tank cannot overflow or go negative.
+IF #LevelReal > 100.0 THEN
+    #LevelReal := 100.0;
+END_IF;
+IF #LevelReal < 0.0 THEN
+    #LevelReal := 0.0;
+END_IF;
+
+// Expose level to the Modbus window (read-only from the network).
+"ModbusHR_DB".HR[5] := REAL_TO_INT(#LevelReal);
