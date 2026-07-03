@@ -21,11 +21,7 @@
         color: #0f1413;
     }
     @top-right {
-        content: "Technical Report";
-        font-family: "Times New Roman", Times, serif;
-        font-style: italic;
-        font-size: 8pt;
-        color: #3b4544;
+        content: element(docseries);
     }
 
     /* Footer: document id (left), page number (centre), site (right). */
@@ -61,6 +57,16 @@ body {
 .docmeta {
     position: running(docid);
     font-family: "Times New Roman", Times, serif;
+    font-size: 8pt;
+    color: #3b4544;
+}
+
+/* Header-right series label (running element), fed from the front-matter series
+ * by build_ltr.py: "Technical Report" for the LTR series, "Briefing" for LB. */
+.docseries {
+    position: running(docseries);
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
     font-size: 8pt;
     color: #3b4544;
 }
