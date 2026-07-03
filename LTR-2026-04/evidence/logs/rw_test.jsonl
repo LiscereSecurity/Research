@@ -1,0 +1,30 @@
+{"ts": "2026-07-02T14:18:47.726973+00:00", "dir": "request", "msg": {"jsonrpc": "2.0", "method": "Api.Login", "id": 1, "params": {"user": "User", "password": "***REDACTED***"}}}
+{"ts": "2026-07-02T14:18:48.077918+00:00", "dir": "response", "msg": {"jsonrpc": "2.0", "id": 1, "result": {"token": "***REDACTED***", "runtime_timeout": "PT30M"}}}
+{"ts": "2026-07-02T14:18:48.078477+00:00", "dir": "request", "msg": {"jsonrpc": "2.0", "method": "PlcProgram.Read", "id": 2, "params": {"var": "\"DW_WEB\".IB0", "mode": "simple"}}}
+{"ts": "2026-07-02T14:18:48.405980+00:00", "dir": "response", "msg": {"jsonrpc": "2.0", "id": 2, "result": false}}
+{"ts": "2026-07-02T14:18:48.406481+00:00", "dir": "request", "msg": {"jsonrpc": "2.0", "method": "PlcProgram.Read", "id": 3, "params": {"var": "\"DW_WEB\".IB1", "mode": "simple"}}}
+{"ts": "2026-07-02T14:18:48.732706+00:00", "dir": "response", "msg": {"jsonrpc": "2.0", "id": 3, "result": false}}
+{"ts": "2026-07-02T14:18:48.733120+00:00", "dir": "request", "msg": {"jsonrpc": "2.0", "method": "PlcProgram.Read", "id": 4, "params": {"var": "\"DW_WEB\".IB2", "mode": "simple"}}}
+{"ts": "2026-07-02T14:18:49.059097+00:00", "dir": "response", "msg": {"jsonrpc": "2.0", "id": 4, "result": false}}
+{"ts": "2026-07-02T14:18:49.059550+00:00", "dir": "request", "msg": {"jsonrpc": "2.0", "method": "PlcProgram.Read", "id": 5, "params": {"var": "\"DW_WEB\".IB3", "mode": "simple"}}}
+{"ts": "2026-07-02T14:18:49.384248+00:00", "dir": "response", "msg": {"jsonrpc": "2.0", "id": 5, "result": false}}
+{"ts": "2026-07-02T14:18:49.384707+00:00", "dir": "request", "msg": {"jsonrpc": "2.0", "method": "PlcProgram.Read", "id": 6, "params": {"var": "\"DW_WEB\".IB4", "mode": "simple"}}}
+{"ts": "2026-07-02T14:18:49.710121+00:00", "dir": "response", "msg": {"jsonrpc": "2.0", "id": 6, "result": false}}
+{"ts": "2026-07-02T14:18:49.710712+00:00", "dir": "request", "msg": {"jsonrpc": "2.0", "method": "PlcProgram.Read", "id": 7, "params": {"var": "\"DW_WEB\".IB5", "mode": "simple"}}}
+{"ts": "2026-07-02T14:18:50.037827+00:00", "dir": "response", "msg": {"jsonrpc": "2.0", "id": 7, "result": false}}
+{"ts": "2026-07-02T14:18:50.038296+00:00", "dir": "request", "msg": {"jsonrpc": "2.0", "method": "PlcProgram.Read", "id": 8, "params": {"var": "\"DW_WEB\".IB6", "mode": "simple"}}}
+{"ts": "2026-07-02T14:18:50.366033+00:00", "dir": "response", "msg": {"jsonrpc": "2.0", "id": 8, "result": false}}
+{"ts": "2026-07-02T14:18:50.366490+00:00", "dir": "request", "msg": {"jsonrpc": "2.0", "method": "PlcProgram.Read", "id": 9, "params": {"var": "\"DW_WEB\".IB7", "mode": "simple"}}}
+{"ts": "2026-07-02T14:18:50.692835+00:00", "dir": "response", "msg": {"jsonrpc": "2.0", "id": 9, "result": false}}
+{"ts": "2026-07-02T14:18:50.693245+00:00", "dir": "request", "msg": {"jsonrpc": "2.0", "method": "PlcProgram.Read", "id": 10, "params": {"var": "\"DW_WEB\".TagInt", "mode": "simple"}}}
+{"ts": "2026-07-02T14:18:51.019871+00:00", "dir": "response", "msg": {"jsonrpc": "2.0", "id": 10, "result": 0}}
+{"ts": "2026-07-02T14:18:51.020298+00:00", "dir": "request", "msg": {"jsonrpc": "2.0", "method": "PlcProgram.Write", "id": 11, "params": {"var": "\"DW_WEB\".QB0", "mode": "simple", "value": true}}}
+{"ts": "2026-07-02T14:18:51.346151+00:00", "dir": "response", "msg": {"jsonrpc": "2.0", "id": 11, "result": true}}
+{"ts": "2026-07-02T14:18:51.551812+00:00", "dir": "request", "msg": {"jsonrpc": "2.0", "method": "PlcProgram.Read", "id": 12, "params": {"var": "\"DW_WEB\".QB0", "mode": "simple"}}}
+{"ts": "2026-07-02T14:18:51.876197+00:00", "dir": "response", "msg": {"jsonrpc": "2.0", "id": 12, "result": true}}
+{"ts": "2026-07-02T14:18:51.876660+00:00", "dir": "request", "msg": {"jsonrpc": "2.0", "method": "PlcProgram.Write", "id": 13, "params": {"var": "\"DW_WEB\".TagInt", "mode": "simple", "value": 12000}}}
+{"ts": "2026-07-02T14:18:52.206708+00:00", "dir": "response", "msg": {"jsonrpc": "2.0", "id": 13, "result": true}}
+{"ts": "2026-07-02T14:18:52.412424+00:00", "dir": "request", "msg": {"jsonrpc": "2.0", "method": "PlcProgram.Read", "id": 14, "params": {"var": "\"DW_WEB\".TagInt", "mode": "simple"}}}
+{"ts": "2026-07-02T14:18:52.737187+00:00", "dir": "response", "msg": {"jsonrpc": "2.0", "id": 14, "result": 12000}}
+{"ts": "2026-07-02T14:18:52.737637+00:00", "dir": "request", "msg": {"jsonrpc": "2.0", "method": "Api.Logout", "id": 15}}
+{"ts": "2026-07-02T14:18:53.061308+00:00", "dir": "response", "msg": {"jsonrpc": "2.0", "id": 15, "result": true}}

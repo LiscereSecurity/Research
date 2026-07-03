@@ -1,0 +1,8 @@
+{"ts": "2026-07-02T14:10:10.954092+00:00", "dir": "request", "msg": {"jsonrpc": "2.0", "method": "Api.Login", "id": 1, "params": {"user": "UserAdministrator", "password": "***REDACTED***"}}}
+{"ts": "2026-07-02T14:10:11.316420+00:00", "dir": "response", "msg": {"jsonrpc": "2.0", "id": 1, "result": {"token": "***REDACTED***", "runtime_timeout": "PT30M"}}}
+{"ts": "2026-07-02T14:10:11.316999+00:00", "dir": "request", "msg": {"jsonrpc": "2.0", "method": "Api.Logout", "id": 2}}
+{"ts": "2026-07-02T14:10:11.639969+00:00", "dir": "response", "msg": {"jsonrpc": "2.0", "id": 2, "result": true}}
+{"ts": "2026-07-02T14:17:00.451039+00:00", "dir": "request", "msg": {"jsonrpc": "2.0", "method": "Api.Login", "id": 1, "params": {"user": "User", "password": "***REDACTED***"}}}
+{"ts": "2026-07-02T14:17:00.803073+00:00", "dir": "response", "msg": {"jsonrpc": "2.0", "id": 1, "result": {"token": "***REDACTED***", "runtime_timeout": "PT30M"}}}
+{"ts": "2026-07-02T14:17:00.803552+00:00", "dir": "request", "msg": {"jsonrpc": "2.0", "method": "Api.Logout", "id": 2}}
+{"ts": "2026-07-02T14:17:01.130862+00:00", "dir": "response", "msg": {"jsonrpc": "2.0", "id": 2, "result": true}}

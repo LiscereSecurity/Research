@@ -1,0 +1,1573 @@
+[
+  {
+    "_index": "packets-2026-07-02",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "en6",
+            "frame.interface_description": "USB 10/100/1000 LAN"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "2026-07-02T16:00:39.036170000Z",
+          "frame.time_utc": "2026-07-02T16:00:39.036170000Z",
+          "frame.time_epoch": "2026-07-02T16:00:39.036170000Z",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_delta": "0.000002000",
+          "frame.time_relative": "8.715431000",
+          "frame.number": "571",
+          "frame.len": "204",
+          "frame.cap_len": "204",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:tls:http:json",
+          "frame.encoding": "0",
+          "frame.coloring_rule.name": "HTTP",
+          "frame.coloring_rule.string": "http || tcp.port == 80 || http2"
+        },
+        "eth": {
+          "eth.dst": "4c:e7:05:e7:5b:8a",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "SiemensIndus_e7:5b:8a",
+            "eth.dst.oui": "5039877",
+            "eth.dst.oui_resolved": "Siemens Industrial Automation Products Ltd., Chengdu",
+            "eth.dst.lg": "0",
+            "eth.dst.ig": "0",
+            "eth.addr": "4c:e7:05:e7:5b:8a",
+            "eth.addr_resolved": "SiemensIndus_e7:5b:8a",
+            "eth.addr.oui": "5039877",
+            "eth.addr.oui_resolved": "Siemens Industrial Automation Products Ltd., Chengdu",
+            "eth.lg": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "08:97:98:61:02:2d",
+          "eth.src_tree": {
+            "eth.src_resolved": "CompalInform_61:02:2d",
+            "eth.src.oui": "563096",
+            "eth.src.oui_resolved": "Compal Information (Kunshan) Co., Ltd.",
+            "eth.src.lg": "0",
+            "eth.src.ig": "0",
+            "eth.addr": "08:97:98:61:02:2d",
+            "eth.addr_resolved": "CompalInform_61:02:2d",
+            "eth.addr.oui": "563096",
+            "eth.addr.oui_resolved": "Compal Information (Kunshan) Co., Ltd.",
+            "eth.lg": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x0800",
+          "eth.stream": "0"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "190",
+          "ip.id": "0xfb46",
+          "ip.flags": "0x02",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "128",
+          "ip.proto": "6",
+          "ip.checksum": "0x7b8c",
+          "ip.checksum.status": "2",
+          "ip.src": "192.168.1.10",
+          "ip.addr": "192.168.1.10",
+          "ip.src_host": "192.168.1.10",
+          "ip.host": "192.168.1.10",
+          "ip.dst": "192.168.1.12",
+          "ip.addr": "192.168.1.12",
+          "ip.dst_host": "192.168.1.12",
+          "ip.host": "192.168.1.12",
+          "ip.stream": "0"
+        },
+        "tcp": {
+          "tcp.srcport": "3826",
+          "tcp.dstport": "443",
+          "tcp.port": "3826",
+          "tcp.port": "443",
+          "tcp.stream": "25",
+          "tcp.stream.pnum": "13",
+          "tcp.completeness": "31",
+          "tcp.completeness_tree": {
+            "tcp.completeness.rst": "0",
+            "tcp.completeness.fin": "1",
+            "tcp.completeness.data": "1",
+            "tcp.completeness.ack": "1",
+            "tcp.completeness.syn-ack": "1",
+            "tcp.completeness.syn": "1",
+            "tcp.completeness.str": "·FDASS"
+          },
+          "tcp.len": "150",
+          "tcp.seq": "2343",
+          "tcp.seq_raw": "1221855213",
+          "tcp.nxtseq": "2493",
+          "tcp.ack": "993",
+          "tcp.ack_raw": "4236160649",
+          "tcp.hdr_len": "20",
+          "tcp.flags": "0x0018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ae": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ece": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "·······AP···"
+          },
+          "tcp.window_size_value": "64543",
+          "tcp.window_size": "64543",
+          "tcp.window_size_scalefactor": "-2",
+          "tcp.checksum": "0x1b93",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "Timestamps": {
+            "tcp.time_relative": "0.352183000",
+            "tcp.time_delta": "0.000002000"
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.001138000",
+            "tcp.analysis.bytes_in_flight": "471",
+            "tcp.analysis.push_bytes_sent": "150"
+          },
+          "tcp.stream.client.contiguity_count": "1",
+          "tcp.stream.server.contiguity_count": "1",
+          "tcp.payload": "17:03:03:00:91:67:e6:c6:fa:e6:d6:55:e9:3d:d7:c2:b7:e5:d8:6a:53:4d:86:07:f2:29:c1:06:9b:f0:0a:10:07:b9:80:15:1d:77:25:b5:ce:4b:92:36:a6:30:6e:1d:8d:f7:22:e4:2a:5e:08:87:6f:da:9e:a1:14:9b:a0:c2:b1:3c:54:b5:8a:1b:cd:05:35:c5:a8:46:a7:98:35:31:5a:40:41:93:38:32:20:b3:39:13:ba:65:9e:74:7e:cc:2d:03:81:4b:5f:79:80:25:0e:56:c6:1c:5b:81:32:e2:e0:1c:8f:46:a5:7e:3c:ab:68:34:15:32:e5:da:5e:24:1b:9b:9e:c1:db:d6:10:01:a7:65:76:a8:3c:bb:ba:49:fc:19:50:72:10:13"
+        },
+        "tls": {
+          "tls.stream": "25",
+          "tls.record": {
+            "tls.record.opaque_type": "23",
+            "tls.record.version": "0x0303",
+            "tls.record.length": "145",
+            "tls.record.content_type": "23",
+            "tls.record.sequence_number": "1",
+            "tls.app_data": "67:e6:c6:fa:e6:d6:55:e9:3d:d7:c2:b7:e5:d8:6a:53:4d:86:07:f2:29:c1:06:9b:f0:0a:10:07:b9:80:15:1d:77:25:b5:ce:4b:92:36:a6:30:6e:1d:8d:f7:22:e4:2a:5e:08:87:6f:da:9e:a1:14:9b:a0:c2:b1:3c:54:b5:8a:1b:cd:05:35:c5:a8:46:a7:98:35:31:5a:40:41:93:38:32:20:b3:39:13:ba:65:9e:74:7e:cc:2d:03:81:4b:5f:79:80:25:0e:56:c6:1c:5b:81:32:e2:e0:1c:8f:46:a5:7e:3c:ab:68:34:15:32:e5:da:5e:24:1b:9b:9e:c1:db:d6:10:01:a7:65:76:a8:3c:bb:ba:49:fc:19:50:72:10:13",
+            "tls.app_data_proto": "Hypertext Transfer Protocol"
+          },
+          "tls.segment.data": "7b:22:6a:73:6f:6e:72:70:63:22:3a:20:22:32:2e:30:22:2c:20:22:6d:65:74:68:6f:64:22:3a:20:22:50:6c:63:50:72:6f:67:72:61:6d:2e:57:72:69:74:65:22:2c:20:22:69:64:22:3a:20:32:36:2c:20:22:70:61:72:61:6d:73:22:3a:20:7b:22:76:61:72:22:3a:20:22:5c:22:44:57:5f:57:45:42:5c:22:2e:51:42:30:22:2c:20:22:6d:6f:64:65:22:3a:20:22:73:69:6d:70:6c:65:22:2c:20:22:76:61:6c:75:65:22:3a:20:74:72:75:65:7d:7d"
+        },
+        "tls.segments": {
+          "tls.segment": "570",
+          "tls.segment": "571",
+          "tls.segment.count": "2",
+          "tls.reassembled.length": "353",
+          "tls.reassembled.data": "50:4f:53:54:20:2f:61:70:69:2f:6a:73:6f:6e:72:70:63:20:48:54:54:50:2f:31:2e:31:0d:0a:41:63:63:65:70:74:2d:45:6e:63:6f:64:69:6e:67:3a:20:69:64:65:6e:74:69:74:79:0d:0a:43:6f:6e:74:65:6e:74:2d:4c:65:6e:67:74:68:3a:20:31:32:38:0d:0a:48:6f:73:74:3a:20:31:39:32:2e:31:36:38:2e:31:2e:31:32:0d:0a:55:73:65:72:2d:41:67:65:6e:74:3a:20:50:79:74:68:6f:6e:2d:75:72:6c:6c:69:62:2f:33:2e:31:34:0d:0a:43:6f:6e:74:65:6e:74:2d:54:79:70:65:3a:20:61:70:70:6c:69:63:61:74:69:6f:6e:2f:6a:73:6f:6e:0d:0a:58:2d:41:75:74:68:2d:54:6f:6b:65:6e:3a:20:2b:49:42:39:4a:4e:55:67:4d:39:33:52:30:47:39:6b:70:30:47:7a:51:55:6c:6e:61:77:43:7a:0d:0a:43:6f:6e:6e:65:63:74:69:6f:6e:3a:20:63:6c:6f:73:65:0d:0a:0d:0a:7b:22:6a:73:6f:6e:72:70:63:22:3a:20:22:32:2e:30:22:2c:20:22:6d:65:74:68:6f:64:22:3a:20:22:50:6c:63:50:72:6f:67:72:61:6d:2e:57:72:69:74:65:22:2c:20:22:69:64:22:3a:20:32:36:2c:20:22:70:61:72:61:6d:73:22:3a:20:7b:22:76:61:72:22:3a:20:22:5c:22:44:57:5f:57:45:42:5c:22:2e:51:42:30:22:2c:20:22:6d:6f:64:65:22:3a:20:22:73:69:6d:70:6c:65:22:2c:20:22:76:61:6c:75:65:22:3a:20:74:72:75:65:7d:7d"
+        },
+        "http": {
+          "POST /api/jsonrpc HTTP/1.1\\r\\n": {
+            "http.request.method": "POST",
+            "http.request.uri": "/api/jsonrpc",
+            "http.request.version": "HTTP/1.1"
+          },
+          "http.accept_encoding": "identity",
+          "http.request.line": "Accept-Encoding: identity\r\n",
+          "http.content_length_header": "128",
+          "http.content_length_header_tree": {
+            "http.content_length": "128"
+          },
+          "http.request.line": "Content-Length: 128\r\n",
+          "http.host": "192.168.1.12",
+          "http.request.line": "Host: 192.168.1.12\r\n",
+          "http.user_agent": "Python-urllib/3.14",
+          "http.request.line": "User-Agent: Python-urllib/3.14\r\n",
+          "http.content_type": "application/json",
+          "http.request.line": "Content-Type: application/json\r\n",
+          "http.request.line": "X-Auth-Token: ***REDACTED***\r\n",
+          "http.connection": "close",
+          "http.request.line": "Connection: close\r\n",
+          "\\r\\n": "",
+          "http.request": "1",
+          "http.response_in": "578",
+          "http.request.full_uri": "https://192.168.1.12/api/jsonrpc",
+          "http.file_data": "7b:22:6a:73:6f:6e:72:70:63:22:3a:20:22:32:2e:30:22:2c:20:22:6d:65:74:68:6f:64:22:3a:20:22:50:6c:63:50:72:6f:67:72:61:6d:2e:57:72:69:74:65:22:2c:20:22:69:64:22:3a:20:32:36:2c:20:22:70:61:72:61:6d:73:22:3a:20:7b:22:76:61:72:22:3a:20:22:5c:22:44:57:5f:57:45:42:5c:22:2e:51:42:30:22:2c:20:22:6d:6f:64:65:22:3a:20:22:73:69:6d:70:6c:65:22:2c:20:22:76:61:6c:75:65:22:3a:20:74:72:75:65:7d:7d"
+        },
+        "json": {
+          "json.object": "{\"jsonrpc\": \"2.0\", \"method\": \"PlcProgram.Write\", \"id\": 26, \"params\": {\"var\": \"\\\"DW_WEB\\\".QB0\", \"mode\": \"simple\", \"value\": true}}",
+          "json.object_tree": {
+            "json.member": "jsonrpc",
+            "json.member_tree": {
+              "json.path_with_value": "/jsonrpc:2.0",
+              "json.member_with_value": "jsonrpc:2.0",
+              "json.value.string": "2.0",
+              "json.key": "jsonrpc",
+              "json.path": "/jsonrpc"
+            },
+            "json.member": "method",
+            "json.member_tree": {
+              "json.path_with_value": "/method:PlcProgram.Write",
+              "json.member_with_value": "method:PlcProgram.Write",
+              "json.value.string": "PlcProgram.Write",
+              "json.key": "method",
+              "json.path": "/method"
+            },
+            "json.member": "id",
+            "json.member_tree": {
+              "json.path_with_value": "/id:26",
+              "json.member_with_value": "id:26",
+              "json.value.number": "26",
+              "json.key": "id",
+              "json.path": "/id"
+            },
+            "json.member": "params",
+            "json.member_tree": {
+              "json.object": "{\"var\": \"\\\"DW_WEB\\\".QB0\", \"mode\": \"simple\", \"value\": true}",
+              "json.object_tree": {
+                "json.member": "var",
+                "json.member_tree": {
+                  "json.path_with_value": "/params/var:\\\"DW_WEB\\\".QB0",
+                  "json.member_with_value": "var:\\\"DW_WEB\\\".QB0",
+                  "json.value.string": "\\\"DW_WEB\\\".QB0",
+                  "json.key": "var",
+                  "json.path": "/params/var"
+                },
+                "json.member": "mode",
+                "json.member_tree": {
+                  "json.path_with_value": "/params/mode:simple",
+                  "json.member_with_value": "mode:simple",
+                  "json.value.string": "simple",
+                  "json.key": "mode",
+                  "json.path": "/params/mode"
+                },
+                "json.member": "value",
+                "json.member_tree": {
+                  "json.path_with_value": "/params/value:true",
+                  "json.member_with_value": "value:true",
+                  "json.value.true": "",
+                  "json.key": "value",
+                  "json.path": "/params/value"
+                }
+              },
+              "json.key": "params",
+              "json.path": "/params"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2026-07-02",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "en6",
+            "frame.interface_description": "USB 10/100/1000 LAN"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "2026-07-02T16:00:49.482518000Z",
+          "frame.time_utc": "2026-07-02T16:00:49.482518000Z",
+          "frame.time_epoch": "2026-07-02T16:00:49.482518000Z",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_delta": "0.000002000",
+          "frame.time_delta_displayed": "10.446348000",
+          "frame.time_relative": "19.161779000",
+          "frame.number": "1253",
+          "frame.len": "205",
+          "frame.cap_len": "205",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:tls:http:json",
+          "frame.encoding": "0",
+          "frame.coloring_rule.name": "HTTP",
+          "frame.coloring_rule.string": "http || tcp.port == 80 || http2"
+        },
+        "eth": {
+          "eth.dst": "4c:e7:05:e7:5b:8a",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "SiemensIndus_e7:5b:8a",
+            "eth.dst.oui": "5039877",
+            "eth.dst.oui_resolved": "Siemens Industrial Automation Products Ltd., Chengdu",
+            "eth.dst.lg": "0",
+            "eth.dst.ig": "0",
+            "eth.addr": "4c:e7:05:e7:5b:8a",
+            "eth.addr_resolved": "SiemensIndus_e7:5b:8a",
+            "eth.addr.oui": "5039877",
+            "eth.addr.oui_resolved": "Siemens Industrial Automation Products Ltd., Chengdu",
+            "eth.lg": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "08:97:98:61:02:2d",
+          "eth.src_tree": {
+            "eth.src_resolved": "CompalInform_61:02:2d",
+            "eth.src.oui": "563096",
+            "eth.src.oui_resolved": "Compal Information (Kunshan) Co., Ltd.",
+            "eth.src.lg": "0",
+            "eth.src.ig": "0",
+            "eth.addr": "08:97:98:61:02:2d",
+            "eth.addr_resolved": "CompalInform_61:02:2d",
+            "eth.addr.oui": "563096",
+            "eth.addr.oui_resolved": "Compal Information (Kunshan) Co., Ltd.",
+            "eth.lg": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x0800",
+          "eth.stream": "0"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "191",
+          "ip.id": "0xfc9b",
+          "ip.flags": "0x02",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "128",
+          "ip.proto": "6",
+          "ip.checksum": "0x7a36",
+          "ip.checksum.status": "2",
+          "ip.src": "192.168.1.10",
+          "ip.addr": "192.168.1.10",
+          "ip.src_host": "192.168.1.10",
+          "ip.host": "192.168.1.10",
+          "ip.dst": "192.168.1.12",
+          "ip.addr": "192.168.1.12",
+          "ip.dst_host": "192.168.1.12",
+          "ip.host": "192.168.1.12",
+          "ip.stream": "0"
+        },
+        "tcp": {
+          "tcp.srcport": "3857",
+          "tcp.dstport": "443",
+          "tcp.port": "3857",
+          "tcp.port": "443",
+          "tcp.stream": "56",
+          "tcp.stream.pnum": "13",
+          "tcp.completeness": "31",
+          "tcp.completeness_tree": {
+            "tcp.completeness.rst": "0",
+            "tcp.completeness.fin": "1",
+            "tcp.completeness.data": "1",
+            "tcp.completeness.ack": "1",
+            "tcp.completeness.syn-ack": "1",
+            "tcp.completeness.syn": "1",
+            "tcp.completeness.str": "·FDASS"
+          },
+          "tcp.len": "151",
+          "tcp.seq": "2343",
+          "tcp.seq_raw": "594216324",
+          "tcp.nxtseq": "2494",
+          "tcp.ack": "993",
+          "tcp.ack_raw": "2093951496",
+          "tcp.hdr_len": "20",
+          "tcp.flags": "0x0018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ae": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ece": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "·······AP···"
+          },
+          "tcp.window_size_value": "64543",
+          "tcp.window_size": "64543",
+          "tcp.window_size_scalefactor": "-2",
+          "tcp.checksum": "0xb388",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "Timestamps": {
+            "tcp.time_relative": "0.431540000",
+            "tcp.time_delta": "0.000002000"
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.001044000",
+            "tcp.analysis.bytes_in_flight": "472",
+            "tcp.analysis.push_bytes_sent": "151"
+          },
+          "tcp.stream.client.contiguity_count": "1",
+          "tcp.stream.server.contiguity_count": "1",
+          "tcp.payload": "17:03:03:00:92:69:6f:b5:5d:44:00:d0:b5:b7:18:7a:8c:91:13:8d:62:a3:43:f3:63:b6:98:99:ea:d8:35:bb:b5:11:31:a8:de:94:93:1f:f3:2a:ac:9d:71:a3:ef:4f:29:d9:5e:0d:4b:d2:f5:75:9d:43:63:8f:82:08:e9:d5:4c:cd:fa:c5:e8:05:78:d0:d8:db:89:b4:b5:d1:57:00:81:93:d9:50:cc:63:bd:0c:f3:10:fc:5b:aa:7f:c3:13:c8:3c:20:76:9a:46:7d:27:d1:93:ff:ee:91:71:7b:20:51:a2:58:c6:ea:de:92:50:56:c7:a1:31:12:b7:b0:02:16:18:f8:ab:1d:a7:25:2c:ec:7b:25:38:54:ac:b9:92:e0:56:99:3d:85:c5:d6"
+        },
+        "tls": {
+          "tls.stream": "56",
+          "tls.record": {
+            "tls.record.opaque_type": "23",
+            "tls.record.version": "0x0303",
+            "tls.record.length": "146",
+            "tls.record.content_type": "23",
+            "tls.record.sequence_number": "1",
+            "tls.app_data": "69:6f:b5:5d:44:00:d0:b5:b7:18:7a:8c:91:13:8d:62:a3:43:f3:63:b6:98:99:ea:d8:35:bb:b5:11:31:a8:de:94:93:1f:f3:2a:ac:9d:71:a3:ef:4f:29:d9:5e:0d:4b:d2:f5:75:9d:43:63:8f:82:08:e9:d5:4c:cd:fa:c5:e8:05:78:d0:d8:db:89:b4:b5:d1:57:00:81:93:d9:50:cc:63:bd:0c:f3:10:fc:5b:aa:7f:c3:13:c8:3c:20:76:9a:46:7d:27:d1:93:ff:ee:91:71:7b:20:51:a2:58:c6:ea:de:92:50:56:c7:a1:31:12:b7:b0:02:16:18:f8:ab:1d:a7:25:2c:ec:7b:25:38:54:ac:b9:92:e0:56:99:3d:85:c5:d6",
+            "tls.app_data_proto": "Hypertext Transfer Protocol"
+          },
+          "tls.segment.data": "7b:22:6a:73:6f:6e:72:70:63:22:3a:20:22:32:2e:30:22:2c:20:22:6d:65:74:68:6f:64:22:3a:20:22:50:6c:63:50:72:6f:67:72:61:6d:2e:57:72:69:74:65:22:2c:20:22:69:64:22:3a:20:35:37:2c:20:22:70:61:72:61:6d:73:22:3a:20:7b:22:76:61:72:22:3a:20:22:5c:22:44:57:5f:57:45:42:5c:22:2e:51:42:30:22:2c:20:22:6d:6f:64:65:22:3a:20:22:73:69:6d:70:6c:65:22:2c:20:22:76:61:6c:75:65:22:3a:20:66:61:6c:73:65:7d:7d"
+        },
+        "tls.segments": {
+          "tls.segment": "1252",
+          "tls.segment": "1253",
+          "tls.segment.count": "2",
+          "tls.reassembled.length": "354",
+          "tls.reassembled.data": "50:4f:53:54:20:2f:61:70:69:2f:6a:73:6f:6e:72:70:63:20:48:54:54:50:2f:31:2e:31:0d:0a:41:63:63:65:70:74:2d:45:6e:63:6f:64:69:6e:67:3a:20:69:64:65:6e:74:69:74:79:0d:0a:43:6f:6e:74:65:6e:74:2d:4c:65:6e:67:74:68:3a:20:31:32:39:0d:0a:48:6f:73:74:3a:20:31:39:32:2e:31:36:38:2e:31:2e:31:32:0d:0a:55:73:65:72:2d:41:67:65:6e:74:3a:20:50:79:74:68:6f:6e:2d:75:72:6c:6c:69:62:2f:33:2e:31:34:0d:0a:43:6f:6e:74:65:6e:74:2d:54:79:70:65:3a:20:61:70:70:6c:69:63:61:74:69:6f:6e:2f:6a:73:6f:6e:0d:0a:58:2d:41:75:74:68:2d:54:6f:6b:65:6e:3a:20:2b:49:42:39:4a:4e:55:67:4d:39:33:52:30:47:39:6b:70:30:47:7a:51:55:6c:6e:61:77:43:7a:0d:0a:43:6f:6e:6e:65:63:74:69:6f:6e:3a:20:63:6c:6f:73:65:0d:0a:0d:0a:7b:22:6a:73:6f:6e:72:70:63:22:3a:20:22:32:2e:30:22:2c:20:22:6d:65:74:68:6f:64:22:3a:20:22:50:6c:63:50:72:6f:67:72:61:6d:2e:57:72:69:74:65:22:2c:20:22:69:64:22:3a:20:35:37:2c:20:22:70:61:72:61:6d:73:22:3a:20:7b:22:76:61:72:22:3a:20:22:5c:22:44:57:5f:57:45:42:5c:22:2e:51:42:30:22:2c:20:22:6d:6f:64:65:22:3a:20:22:73:69:6d:70:6c:65:22:2c:20:22:76:61:6c:75:65:22:3a:20:66:61:6c:73:65:7d:7d"
+        },
+        "http": {
+          "POST /api/jsonrpc HTTP/1.1\\r\\n": {
+            "http.request.method": "POST",
+            "http.request.uri": "/api/jsonrpc",
+            "http.request.version": "HTTP/1.1"
+          },
+          "http.accept_encoding": "identity",
+          "http.request.line": "Accept-Encoding: identity\r\n",
+          "http.content_length_header": "129",
+          "http.content_length_header_tree": {
+            "http.content_length": "129"
+          },
+          "http.request.line": "Content-Length: 129\r\n",
+          "http.host": "192.168.1.12",
+          "http.request.line": "Host: 192.168.1.12\r\n",
+          "http.user_agent": "Python-urllib/3.14",
+          "http.request.line": "User-Agent: Python-urllib/3.14\r\n",
+          "http.content_type": "application/json",
+          "http.request.line": "Content-Type: application/json\r\n",
+          "http.request.line": "X-Auth-Token: ***REDACTED***\r\n",
+          "http.connection": "close",
+          "http.request.line": "Connection: close\r\n",
+          "\\r\\n": "",
+          "http.request": "1",
+          "http.response_in": "1260",
+          "http.request.full_uri": "https://192.168.1.12/api/jsonrpc",
+          "http.file_data": "7b:22:6a:73:6f:6e:72:70:63:22:3a:20:22:32:2e:30:22:2c:20:22:6d:65:74:68:6f:64:22:3a:20:22:50:6c:63:50:72:6f:67:72:61:6d:2e:57:72:69:74:65:22:2c:20:22:69:64:22:3a:20:35:37:2c:20:22:70:61:72:61:6d:73:22:3a:20:7b:22:76:61:72:22:3a:20:22:5c:22:44:57:5f:57:45:42:5c:22:2e:51:42:30:22:2c:20:22:6d:6f:64:65:22:3a:20:22:73:69:6d:70:6c:65:22:2c:20:22:76:61:6c:75:65:22:3a:20:66:61:6c:73:65:7d:7d"
+        },
+        "json": {
+          "json.object": "{\"jsonrpc\": \"2.0\", \"method\": \"PlcProgram.Write\", \"id\": 57, \"params\": {\"var\": \"\\\"DW_WEB\\\".QB0\", \"mode\": \"simple\", \"value\": false}}",
+          "json.object_tree": {
+            "json.member": "jsonrpc",
+            "json.member_tree": {
+              "json.path_with_value": "/jsonrpc:2.0",
+              "json.member_with_value": "jsonrpc:2.0",
+              "json.value.string": "2.0",
+              "json.key": "jsonrpc",
+              "json.path": "/jsonrpc"
+            },
+            "json.member": "method",
+            "json.member_tree": {
+              "json.path_with_value": "/method:PlcProgram.Write",
+              "json.member_with_value": "method:PlcProgram.Write",
+              "json.value.string": "PlcProgram.Write",
+              "json.key": "method",
+              "json.path": "/method"
+            },
+            "json.member": "id",
+            "json.member_tree": {
+              "json.path_with_value": "/id:57",
+              "json.member_with_value": "id:57",
+              "json.value.number": "57",
+              "json.key": "id",
+              "json.path": "/id"
+            },
+            "json.member": "params",
+            "json.member_tree": {
+              "json.object": "{\"var\": \"\\\"DW_WEB\\\".QB0\", \"mode\": \"simple\", \"value\": false}",
+              "json.object_tree": {
+                "json.member": "var",
+                "json.member_tree": {
+                  "json.path_with_value": "/params/var:\\\"DW_WEB\\\".QB0",
+                  "json.member_with_value": "var:\\\"DW_WEB\\\".QB0",
+                  "json.value.string": "\\\"DW_WEB\\\".QB0",
+                  "json.key": "var",
+                  "json.path": "/params/var"
+                },
+                "json.member": "mode",
+                "json.member_tree": {
+                  "json.path_with_value": "/params/mode:simple",
+                  "json.member_with_value": "mode:simple",
+                  "json.value.string": "simple",
+                  "json.key": "mode",
+                  "json.path": "/params/mode"
+                },
+                "json.member": "value",
+                "json.member_tree": {
+                  "json.path_with_value": "/params/value:false",
+                  "json.member_with_value": "value:false",
+                  "json.value.false": "",
+                  "json.key": "value",
+                  "json.path": "/params/value"
+                }
+              },
+              "json.key": "params",
+              "json.path": "/params"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2026-07-02",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "en6",
+            "frame.interface_description": "USB 10/100/1000 LAN"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "2026-07-02T16:00:59.833486000Z",
+          "frame.time_utc": "2026-07-02T16:00:59.833486000Z",
+          "frame.time_epoch": "2026-07-02T16:00:59.833486000Z",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_delta": "0.000003000",
+          "frame.time_delta_displayed": "10.350968000",
+          "frame.time_relative": "29.512747000",
+          "frame.number": "1935",
+          "frame.len": "204",
+          "frame.cap_len": "204",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:tls:http:json",
+          "frame.encoding": "0",
+          "frame.coloring_rule.name": "HTTP",
+          "frame.coloring_rule.string": "http || tcp.port == 80 || http2"
+        },
+        "eth": {
+          "eth.dst": "4c:e7:05:e7:5b:8a",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "SiemensIndus_e7:5b:8a",
+            "eth.dst.oui": "5039877",
+            "eth.dst.oui_resolved": "Siemens Industrial Automation Products Ltd., Chengdu",
+            "eth.dst.lg": "0",
+            "eth.dst.ig": "0",
+            "eth.addr": "4c:e7:05:e7:5b:8a",
+            "eth.addr_resolved": "SiemensIndus_e7:5b:8a",
+            "eth.addr.oui": "5039877",
+            "eth.addr.oui_resolved": "Siemens Industrial Automation Products Ltd., Chengdu",
+            "eth.lg": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "08:97:98:61:02:2d",
+          "eth.src_tree": {
+            "eth.src_resolved": "CompalInform_61:02:2d",
+            "eth.src.oui": "563096",
+            "eth.src.oui_resolved": "Compal Information (Kunshan) Co., Ltd.",
+            "eth.src.lg": "0",
+            "eth.src.ig": "0",
+            "eth.addr": "08:97:98:61:02:2d",
+            "eth.addr_resolved": "CompalInform_61:02:2d",
+            "eth.addr.oui": "563096",
+            "eth.addr.oui_resolved": "Compal Information (Kunshan) Co., Ltd.",
+            "eth.lg": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x0800",
+          "eth.stream": "0"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "190",
+          "ip.id": "0xfdf0",
+          "ip.flags": "0x02",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "128",
+          "ip.proto": "6",
+          "ip.checksum": "0x78e2",
+          "ip.checksum.status": "2",
+          "ip.src": "192.168.1.10",
+          "ip.addr": "192.168.1.10",
+          "ip.src_host": "192.168.1.10",
+          "ip.host": "192.168.1.10",
+          "ip.dst": "192.168.1.12",
+          "ip.addr": "192.168.1.12",
+          "ip.dst_host": "192.168.1.12",
+          "ip.host": "192.168.1.12",
+          "ip.stream": "0"
+        },
+        "tcp": {
+          "tcp.srcport": "3888",
+          "tcp.dstport": "443",
+          "tcp.port": "3888",
+          "tcp.port": "443",
+          "tcp.stream": "87",
+          "tcp.stream.pnum": "13",
+          "tcp.completeness": "31",
+          "tcp.completeness_tree": {
+            "tcp.completeness.rst": "0",
+            "tcp.completeness.fin": "1",
+            "tcp.completeness.data": "1",
+            "tcp.completeness.ack": "1",
+            "tcp.completeness.syn-ack": "1",
+            "tcp.completeness.syn": "1",
+            "tcp.completeness.str": "·FDASS"
+          },
+          "tcp.len": "150",
+          "tcp.seq": "2343",
+          "tcp.seq_raw": "1528820010",
+          "tcp.nxtseq": "2493",
+          "tcp.ack": "992",
+          "tcp.ack_raw": "1719692822",
+          "tcp.hdr_len": "20",
+          "tcp.flags": "0x0018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ae": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ece": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "·······AP···"
+          },
+          "tcp.window_size_value": "64544",
+          "tcp.window_size": "64544",
+          "tcp.window_size_scalefactor": "-2",
+          "tcp.checksum": "0x83f5",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "Timestamps": {
+            "tcp.time_relative": "0.335575000",
+            "tcp.time_delta": "0.000003000"
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.001278000",
+            "tcp.analysis.bytes_in_flight": "471",
+            "tcp.analysis.push_bytes_sent": "150"
+          },
+          "tcp.stream.client.contiguity_count": "1",
+          "tcp.stream.server.contiguity_count": "1",
+          "tcp.payload": "17:03:03:00:91:8f:e3:49:82:e6:cd:bb:e8:c5:07:86:fd:06:8b:4b:54:14:80:91:e9:78:24:1b:86:e0:1a:47:ed:b9:61:6d:02:b2:64:b6:a8:90:f6:23:1f:32:c5:11:a8:d0:a7:ef:4c:10:1c:d2:19:ab:21:a1:57:1e:63:a8:5e:6c:45:ca:09:09:fb:9b:88:b0:3c:4c:10:f4:d9:62:7a:f3:12:9e:c4:97:f9:e7:2d:67:bc:f2:31:df:92:f7:b9:77:3e:6f:71:6b:f5:79:d6:e9:e4:bb:8e:17:d2:e0:b7:c5:bd:5e:f8:57:2c:64:09:3c:5f:7d:fc:72:78:18:fb:95:44:12:5f:de:33:5f:5f:de:0b:8c:26:96:ca:47:8e:04:87:7a:2a:82"
+        },
+        "tls": {
+          "tls.stream": "87",
+          "tls.record": {
+            "tls.record.opaque_type": "23",
+            "tls.record.version": "0x0303",
+            "tls.record.length": "145",
+            "tls.record.content_type": "23",
+            "tls.record.sequence_number": "1",
+            "tls.app_data": "8f:e3:49:82:e6:cd:bb:e8:c5:07:86:fd:06:8b:4b:54:14:80:91:e9:78:24:1b:86:e0:1a:47:ed:b9:61:6d:02:b2:64:b6:a8:90:f6:23:1f:32:c5:11:a8:d0:a7:ef:4c:10:1c:d2:19:ab:21:a1:57:1e:63:a8:5e:6c:45:ca:09:09:fb:9b:88:b0:3c:4c:10:f4:d9:62:7a:f3:12:9e:c4:97:f9:e7:2d:67:bc:f2:31:df:92:f7:b9:77:3e:6f:71:6b:f5:79:d6:e9:e4:bb:8e:17:d2:e0:b7:c5:bd:5e:f8:57:2c:64:09:3c:5f:7d:fc:72:78:18:fb:95:44:12:5f:de:33:5f:5f:de:0b:8c:26:96:ca:47:8e:04:87:7a:2a:82",
+            "tls.app_data_proto": "Hypertext Transfer Protocol"
+          },
+          "tls.segment.data": "7b:22:6a:73:6f:6e:72:70:63:22:3a:20:22:32:2e:30:22:2c:20:22:6d:65:74:68:6f:64:22:3a:20:22:50:6c:63:50:72:6f:67:72:61:6d:2e:57:72:69:74:65:22:2c:20:22:69:64:22:3a:20:38:38:2c:20:22:70:61:72:61:6d:73:22:3a:20:7b:22:76:61:72:22:3a:20:22:5c:22:44:57:5f:57:45:42:5c:22:2e:51:42:30:22:2c:20:22:6d:6f:64:65:22:3a:20:22:73:69:6d:70:6c:65:22:2c:20:22:76:61:6c:75:65:22:3a:20:74:72:75:65:7d:7d"
+        },
+        "tls.segments": {
+          "tls.segment": "1934",
+          "tls.segment": "1935",
+          "tls.segment.count": "2",
+          "tls.reassembled.length": "353",
+          "tls.reassembled.data": "50:4f:53:54:20:2f:61:70:69:2f:6a:73:6f:6e:72:70:63:20:48:54:54:50:2f:31:2e:31:0d:0a:41:63:63:65:70:74:2d:45:6e:63:6f:64:69:6e:67:3a:20:69:64:65:6e:74:69:74:79:0d:0a:43:6f:6e:74:65:6e:74:2d:4c:65:6e:67:74:68:3a:20:31:32:38:0d:0a:48:6f:73:74:3a:20:31:39:32:2e:31:36:38:2e:31:2e:31:32:0d:0a:55:73:65:72:2d:41:67:65:6e:74:3a:20:50:79:74:68:6f:6e:2d:75:72:6c:6c:69:62:2f:33:2e:31:34:0d:0a:43:6f:6e:74:65:6e:74:2d:54:79:70:65:3a:20:61:70:70:6c:69:63:61:74:69:6f:6e:2f:6a:73:6f:6e:0d:0a:58:2d:41:75:74:68:2d:54:6f:6b:65:6e:3a:20:2b:49:42:39:4a:4e:55:67:4d:39:33:52:30:47:39:6b:70:30:47:7a:51:55:6c:6e:61:77:43:7a:0d:0a:43:6f:6e:6e:65:63:74:69:6f:6e:3a:20:63:6c:6f:73:65:0d:0a:0d:0a:7b:22:6a:73:6f:6e:72:70:63:22:3a:20:22:32:2e:30:22:2c:20:22:6d:65:74:68:6f:64:22:3a:20:22:50:6c:63:50:72:6f:67:72:61:6d:2e:57:72:69:74:65:22:2c:20:22:69:64:22:3a:20:38:38:2c:20:22:70:61:72:61:6d:73:22:3a:20:7b:22:76:61:72:22:3a:20:22:5c:22:44:57:5f:57:45:42:5c:22:2e:51:42:30:22:2c:20:22:6d:6f:64:65:22:3a:20:22:73:69:6d:70:6c:65:22:2c:20:22:76:61:6c:75:65:22:3a:20:74:72:75:65:7d:7d"
+        },
+        "http": {
+          "POST /api/jsonrpc HTTP/1.1\\r\\n": {
+            "http.request.method": "POST",
+            "http.request.uri": "/api/jsonrpc",
+            "http.request.version": "HTTP/1.1"
+          },
+          "http.accept_encoding": "identity",
+          "http.request.line": "Accept-Encoding: identity\r\n",
+          "http.content_length_header": "128",
+          "http.content_length_header_tree": {
+            "http.content_length": "128"
+          },
+          "http.request.line": "Content-Length: 128\r\n",
+          "http.host": "192.168.1.12",
+          "http.request.line": "Host: 192.168.1.12\r\n",
+          "http.user_agent": "Python-urllib/3.14",
+          "http.request.line": "User-Agent: Python-urllib/3.14\r\n",
+          "http.content_type": "application/json",
+          "http.request.line": "Content-Type: application/json\r\n",
+          "http.request.line": "X-Auth-Token: ***REDACTED***\r\n",
+          "http.connection": "close",
+          "http.request.line": "Connection: close\r\n",
+          "\\r\\n": "",
+          "http.request": "1",
+          "http.response_in": "1942",
+          "http.request.full_uri": "https://192.168.1.12/api/jsonrpc",
+          "http.file_data": "7b:22:6a:73:6f:6e:72:70:63:22:3a:20:22:32:2e:30:22:2c:20:22:6d:65:74:68:6f:64:22:3a:20:22:50:6c:63:50:72:6f:67:72:61:6d:2e:57:72:69:74:65:22:2c:20:22:69:64:22:3a:20:38:38:2c:20:22:70:61:72:61:6d:73:22:3a:20:7b:22:76:61:72:22:3a:20:22:5c:22:44:57:5f:57:45:42:5c:22:2e:51:42:30:22:2c:20:22:6d:6f:64:65:22:3a:20:22:73:69:6d:70:6c:65:22:2c:20:22:76:61:6c:75:65:22:3a:20:74:72:75:65:7d:7d"
+        },
+        "json": {
+          "json.object": "{\"jsonrpc\": \"2.0\", \"method\": \"PlcProgram.Write\", \"id\": 88, \"params\": {\"var\": \"\\\"DW_WEB\\\".QB0\", \"mode\": \"simple\", \"value\": true}}",
+          "json.object_tree": {
+            "json.member": "jsonrpc",
+            "json.member_tree": {
+              "json.path_with_value": "/jsonrpc:2.0",
+              "json.member_with_value": "jsonrpc:2.0",
+              "json.value.string": "2.0",
+              "json.key": "jsonrpc",
+              "json.path": "/jsonrpc"
+            },
+            "json.member": "method",
+            "json.member_tree": {
+              "json.path_with_value": "/method:PlcProgram.Write",
+              "json.member_with_value": "method:PlcProgram.Write",
+              "json.value.string": "PlcProgram.Write",
+              "json.key": "method",
+              "json.path": "/method"
+            },
+            "json.member": "id",
+            "json.member_tree": {
+              "json.path_with_value": "/id:88",
+              "json.member_with_value": "id:88",
+              "json.value.number": "88",
+              "json.key": "id",
+              "json.path": "/id"
+            },
+            "json.member": "params",
+            "json.member_tree": {
+              "json.object": "{\"var\": \"\\\"DW_WEB\\\".QB0\", \"mode\": \"simple\", \"value\": true}",
+              "json.object_tree": {
+                "json.member": "var",
+                "json.member_tree": {
+                  "json.path_with_value": "/params/var:\\\"DW_WEB\\\".QB0",
+                  "json.member_with_value": "var:\\\"DW_WEB\\\".QB0",
+                  "json.value.string": "\\\"DW_WEB\\\".QB0",
+                  "json.key": "var",
+                  "json.path": "/params/var"
+                },
+                "json.member": "mode",
+                "json.member_tree": {
+                  "json.path_with_value": "/params/mode:simple",
+                  "json.member_with_value": "mode:simple",
+                  "json.value.string": "simple",
+                  "json.key": "mode",
+                  "json.path": "/params/mode"
+                },
+                "json.member": "value",
+                "json.member_tree": {
+                  "json.path_with_value": "/params/value:true",
+                  "json.member_with_value": "value:true",
+                  "json.value.true": "",
+                  "json.key": "value",
+                  "json.path": "/params/value"
+                }
+              },
+              "json.key": "params",
+              "json.path": "/params"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2026-07-02",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "en6",
+            "frame.interface_description": "USB 10/100/1000 LAN"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "2026-07-02T16:01:10.239187000Z",
+          "frame.time_utc": "2026-07-02T16:01:10.239187000Z",
+          "frame.time_epoch": "2026-07-02T16:01:10.239187000Z",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_delta": "0.000003000",
+          "frame.time_delta_displayed": "10.405701000",
+          "frame.time_relative": "39.918448000",
+          "frame.number": "2617",
+          "frame.len": "206",
+          "frame.cap_len": "206",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:tls:http:json",
+          "frame.encoding": "0",
+          "frame.coloring_rule.name": "HTTP",
+          "frame.coloring_rule.string": "http || tcp.port == 80 || http2"
+        },
+        "eth": {
+          "eth.dst": "4c:e7:05:e7:5b:8a",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "SiemensIndus_e7:5b:8a",
+            "eth.dst.oui": "5039877",
+            "eth.dst.oui_resolved": "Siemens Industrial Automation Products Ltd., Chengdu",
+            "eth.dst.lg": "0",
+            "eth.dst.ig": "0",
+            "eth.addr": "4c:e7:05:e7:5b:8a",
+            "eth.addr_resolved": "SiemensIndus_e7:5b:8a",
+            "eth.addr.oui": "5039877",
+            "eth.addr.oui_resolved": "Siemens Industrial Automation Products Ltd., Chengdu",
+            "eth.lg": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "08:97:98:61:02:2d",
+          "eth.src_tree": {
+            "eth.src_resolved": "CompalInform_61:02:2d",
+            "eth.src.oui": "563096",
+            "eth.src.oui_resolved": "Compal Information (Kunshan) Co., Ltd.",
+            "eth.src.lg": "0",
+            "eth.src.ig": "0",
+            "eth.addr": "08:97:98:61:02:2d",
+            "eth.addr_resolved": "CompalInform_61:02:2d",
+            "eth.addr.oui": "563096",
+            "eth.addr.oui_resolved": "Compal Information (Kunshan) Co., Ltd.",
+            "eth.lg": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x0800",
+          "eth.stream": "0"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "192",
+          "ip.id": "0xff45",
+          "ip.flags": "0x02",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "128",
+          "ip.proto": "6",
+          "ip.checksum": "0x778b",
+          "ip.checksum.status": "2",
+          "ip.src": "192.168.1.10",
+          "ip.addr": "192.168.1.10",
+          "ip.src_host": "192.168.1.10",
+          "ip.host": "192.168.1.10",
+          "ip.dst": "192.168.1.12",
+          "ip.addr": "192.168.1.12",
+          "ip.dst_host": "192.168.1.12",
+          "ip.host": "192.168.1.12",
+          "ip.stream": "0"
+        },
+        "tcp": {
+          "tcp.srcport": "3923",
+          "tcp.dstport": "443",
+          "tcp.port": "3923",
+          "tcp.port": "443",
+          "tcp.stream": "118",
+          "tcp.stream.pnum": "13",
+          "tcp.completeness": "31",
+          "tcp.completeness_tree": {
+            "tcp.completeness.rst": "0",
+            "tcp.completeness.fin": "1",
+            "tcp.completeness.data": "1",
+            "tcp.completeness.ack": "1",
+            "tcp.completeness.syn-ack": "1",
+            "tcp.completeness.syn": "1",
+            "tcp.completeness.str": "·FDASS"
+          },
+          "tcp.len": "152",
+          "tcp.seq": "2343",
+          "tcp.seq_raw": "1148395853",
+          "tcp.nxtseq": "2495",
+          "tcp.ack": "992",
+          "tcp.ack_raw": "3525044867",
+          "tcp.hdr_len": "20",
+          "tcp.flags": "0x0018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ae": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ece": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "·······AP···"
+          },
+          "tcp.window_size_value": "64544",
+          "tcp.window_size": "64544",
+          "tcp.window_size_scalefactor": "-2",
+          "tcp.checksum": "0x5294",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "Timestamps": {
+            "tcp.time_relative": "0.390343000",
+            "tcp.time_delta": "0.000003000"
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.001017000",
+            "tcp.analysis.bytes_in_flight": "473",
+            "tcp.analysis.push_bytes_sent": "152"
+          },
+          "tcp.stream.client.contiguity_count": "1",
+          "tcp.stream.server.contiguity_count": "1",
+          "tcp.payload": "17:03:03:00:93:ab:a6:82:b2:ba:ee:30:5e:61:e9:e3:c5:96:cb:ae:4a:dc:bc:be:50:71:74:3e:1c:51:9a:9a:67:c5:b8:76:de:35:70:50:8d:ee:34:bd:c1:22:41:fb:58:08:49:36:5e:c2:d1:17:e8:c7:4c:90:17:23:35:72:cc:04:58:5b:49:0a:51:1e:73:48:47:bd:ec:da:92:bf:6c:41:6e:f9:df:65:cd:8b:a4:d7:95:29:a0:dc:da:be:a6:c1:dd:63:b6:98:85:35:67:eb:ff:87:f4:e6:5b:ff:25:cd:b8:95:2d:a9:9e:e7:d5:6b:10:dd:84:ed:29:36:9c:0d:d6:04:1d:23:35:02:03:e4:17:f5:b6:9e:c7:c3:e7:7a:0d:5f:4f:f3:3e:59"
+        },
+        "tls": {
+          "tls.stream": "118",
+          "tls.record": {
+            "tls.record.opaque_type": "23",
+            "tls.record.version": "0x0303",
+            "tls.record.length": "147",
+            "tls.record.content_type": "23",
+            "tls.record.sequence_number": "1",
+            "tls.app_data": "ab:a6:82:b2:ba:ee:30:5e:61:e9:e3:c5:96:cb:ae:4a:dc:bc:be:50:71:74:3e:1c:51:9a:9a:67:c5:b8:76:de:35:70:50:8d:ee:34:bd:c1:22:41:fb:58:08:49:36:5e:c2:d1:17:e8:c7:4c:90:17:23:35:72:cc:04:58:5b:49:0a:51:1e:73:48:47:bd:ec:da:92:bf:6c:41:6e:f9:df:65:cd:8b:a4:d7:95:29:a0:dc:da:be:a6:c1:dd:63:b6:98:85:35:67:eb:ff:87:f4:e6:5b:ff:25:cd:b8:95:2d:a9:9e:e7:d5:6b:10:dd:84:ed:29:36:9c:0d:d6:04:1d:23:35:02:03:e4:17:f5:b6:9e:c7:c3:e7:7a:0d:5f:4f:f3:3e:59",
+            "tls.app_data_proto": "Hypertext Transfer Protocol"
+          },
+          "tls.segment.data": "7b:22:6a:73:6f:6e:72:70:63:22:3a:20:22:32:2e:30:22:2c:20:22:6d:65:74:68:6f:64:22:3a:20:22:50:6c:63:50:72:6f:67:72:61:6d:2e:57:72:69:74:65:22:2c:20:22:69:64:22:3a:20:31:31:39:2c:20:22:70:61:72:61:6d:73:22:3a:20:7b:22:76:61:72:22:3a:20:22:5c:22:44:57:5f:57:45:42:5c:22:2e:51:42:30:22:2c:20:22:6d:6f:64:65:22:3a:20:22:73:69:6d:70:6c:65:22:2c:20:22:76:61:6c:75:65:22:3a:20:66:61:6c:73:65:7d:7d"
+        },
+        "tls.segments": {
+          "tls.segment": "2616",
+          "tls.segment": "2617",
+          "tls.segment.count": "2",
+          "tls.reassembled.length": "355",
+          "tls.reassembled.data": "50:4f:53:54:20:2f:61:70:69:2f:6a:73:6f:6e:72:70:63:20:48:54:54:50:2f:31:2e:31:0d:0a:41:63:63:65:70:74:2d:45:6e:63:6f:64:69:6e:67:3a:20:69:64:65:6e:74:69:74:79:0d:0a:43:6f:6e:74:65:6e:74:2d:4c:65:6e:67:74:68:3a:20:31:33:30:0d:0a:48:6f:73:74:3a:20:31:39:32:2e:31:36:38:2e:31:2e:31:32:0d:0a:55:73:65:72:2d:41:67:65:6e:74:3a:20:50:79:74:68:6f:6e:2d:75:72:6c:6c:69:62:2f:33:2e:31:34:0d:0a:43:6f:6e:74:65:6e:74:2d:54:79:70:65:3a:20:61:70:70:6c:69:63:61:74:69:6f:6e:2f:6a:73:6f:6e:0d:0a:58:2d:41:75:74:68:2d:54:6f:6b:65:6e:3a:20:2b:49:42:39:4a:4e:55:67:4d:39:33:52:30:47:39:6b:70:30:47:7a:51:55:6c:6e:61:77:43:7a:0d:0a:43:6f:6e:6e:65:63:74:69:6f:6e:3a:20:63:6c:6f:73:65:0d:0a:0d:0a:7b:22:6a:73:6f:6e:72:70:63:22:3a:20:22:32:2e:30:22:2c:20:22:6d:65:74:68:6f:64:22:3a:20:22:50:6c:63:50:72:6f:67:72:61:6d:2e:57:72:69:74:65:22:2c:20:22:69:64:22:3a:20:31:31:39:2c:20:22:70:61:72:61:6d:73:22:3a:20:7b:22:76:61:72:22:3a:20:22:5c:22:44:57:5f:57:45:42:5c:22:2e:51:42:30:22:2c:20:22:6d:6f:64:65:22:3a:20:22:73:69:6d:70:6c:65:22:2c:20:22:76:61:6c:75:65:22:3a:20:66:61:6c:73:65:7d:7d"
+        },
+        "http": {
+          "POST /api/jsonrpc HTTP/1.1\\r\\n": {
+            "http.request.method": "POST",
+            "http.request.uri": "/api/jsonrpc",
+            "http.request.version": "HTTP/1.1"
+          },
+          "http.accept_encoding": "identity",
+          "http.request.line": "Accept-Encoding: identity\r\n",
+          "http.content_length_header": "130",
+          "http.content_length_header_tree": {
+            "http.content_length": "130"
+          },
+          "http.request.line": "Content-Length: 130\r\n",
+          "http.host": "192.168.1.12",
+          "http.request.line": "Host: 192.168.1.12\r\n",
+          "http.user_agent": "Python-urllib/3.14",
+          "http.request.line": "User-Agent: Python-urllib/3.14\r\n",
+          "http.content_type": "application/json",
+          "http.request.line": "Content-Type: application/json\r\n",
+          "http.request.line": "X-Auth-Token: ***REDACTED***\r\n",
+          "http.connection": "close",
+          "http.request.line": "Connection: close\r\n",
+          "\\r\\n": "",
+          "http.request": "1",
+          "http.response_in": "2624",
+          "http.request.full_uri": "https://192.168.1.12/api/jsonrpc",
+          "http.file_data": "7b:22:6a:73:6f:6e:72:70:63:22:3a:20:22:32:2e:30:22:2c:20:22:6d:65:74:68:6f:64:22:3a:20:22:50:6c:63:50:72:6f:67:72:61:6d:2e:57:72:69:74:65:22:2c:20:22:69:64:22:3a:20:31:31:39:2c:20:22:70:61:72:61:6d:73:22:3a:20:7b:22:76:61:72:22:3a:20:22:5c:22:44:57:5f:57:45:42:5c:22:2e:51:42:30:22:2c:20:22:6d:6f:64:65:22:3a:20:22:73:69:6d:70:6c:65:22:2c:20:22:76:61:6c:75:65:22:3a:20:66:61:6c:73:65:7d:7d"
+        },
+        "json": {
+          "json.object": "{\"jsonrpc\": \"2.0\", \"method\": \"PlcProgram.Write\", \"id\": 119, \"params\": {\"var\": \"\\\"DW_WEB\\\".QB0\", \"mode\": \"simple\", \"value\": false}}",
+          "json.object_tree": {
+            "json.member": "jsonrpc",
+            "json.member_tree": {
+              "json.path_with_value": "/jsonrpc:2.0",
+              "json.member_with_value": "jsonrpc:2.0",
+              "json.value.string": "2.0",
+              "json.key": "jsonrpc",
+              "json.path": "/jsonrpc"
+            },
+            "json.member": "method",
+            "json.member_tree": {
+              "json.path_with_value": "/method:PlcProgram.Write",
+              "json.member_with_value": "method:PlcProgram.Write",
+              "json.value.string": "PlcProgram.Write",
+              "json.key": "method",
+              "json.path": "/method"
+            },
+            "json.member": "id",
+            "json.member_tree": {
+              "json.path_with_value": "/id:119",
+              "json.member_with_value": "id:119",
+              "json.value.number": "119",
+              "json.key": "id",
+              "json.path": "/id"
+            },
+            "json.member": "params",
+            "json.member_tree": {
+              "json.object": "{\"var\": \"\\\"DW_WEB\\\".QB0\", \"mode\": \"simple\", \"value\": false}",
+              "json.object_tree": {
+                "json.member": "var",
+                "json.member_tree": {
+                  "json.path_with_value": "/params/var:\\\"DW_WEB\\\".QB0",
+                  "json.member_with_value": "var:\\\"DW_WEB\\\".QB0",
+                  "json.value.string": "\\\"DW_WEB\\\".QB0",
+                  "json.key": "var",
+                  "json.path": "/params/var"
+                },
+                "json.member": "mode",
+                "json.member_tree": {
+                  "json.path_with_value": "/params/mode:simple",
+                  "json.member_with_value": "mode:simple",
+                  "json.value.string": "simple",
+                  "json.key": "mode",
+                  "json.path": "/params/mode"
+                },
+                "json.member": "value",
+                "json.member_tree": {
+                  "json.path_with_value": "/params/value:false",
+                  "json.member_with_value": "value:false",
+                  "json.value.false": "",
+                  "json.key": "value",
+                  "json.path": "/params/value"
+                }
+              },
+              "json.key": "params",
+              "json.path": "/params"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2026-07-02",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "en6",
+            "frame.interface_description": "USB 10/100/1000 LAN"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "2026-07-02T16:01:20.661498000Z",
+          "frame.time_utc": "2026-07-02T16:01:20.661498000Z",
+          "frame.time_epoch": "2026-07-02T16:01:20.661498000Z",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_delta": "0.000073000",
+          "frame.time_delta_displayed": "10.422311000",
+          "frame.time_relative": "50.340759000",
+          "frame.number": "3299",
+          "frame.len": "205",
+          "frame.cap_len": "205",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:tls:http:json",
+          "frame.encoding": "0",
+          "frame.coloring_rule.name": "HTTP",
+          "frame.coloring_rule.string": "http || tcp.port == 80 || http2"
+        },
+        "eth": {
+          "eth.dst": "4c:e7:05:e7:5b:8a",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "SiemensIndus_e7:5b:8a",
+            "eth.dst.oui": "5039877",
+            "eth.dst.oui_resolved": "Siemens Industrial Automation Products Ltd., Chengdu",
+            "eth.dst.lg": "0",
+            "eth.dst.ig": "0",
+            "eth.addr": "4c:e7:05:e7:5b:8a",
+            "eth.addr_resolved": "SiemensIndus_e7:5b:8a",
+            "eth.addr.oui": "5039877",
+            "eth.addr.oui_resolved": "Siemens Industrial Automation Products Ltd., Chengdu",
+            "eth.lg": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "08:97:98:61:02:2d",
+          "eth.src_tree": {
+            "eth.src_resolved": "CompalInform_61:02:2d",
+            "eth.src.oui": "563096",
+            "eth.src.oui_resolved": "Compal Information (Kunshan) Co., Ltd.",
+            "eth.src.lg": "0",
+            "eth.src.ig": "0",
+            "eth.addr": "08:97:98:61:02:2d",
+            "eth.addr_resolved": "CompalInform_61:02:2d",
+            "eth.addr.oui": "563096",
+            "eth.addr.oui_resolved": "Compal Information (Kunshan) Co., Ltd.",
+            "eth.lg": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x0800",
+          "eth.stream": "0"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "191",
+          "ip.id": "0x009a",
+          "ip.flags": "0x02",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "128",
+          "ip.proto": "6",
+          "ip.checksum": "0x7638",
+          "ip.checksum.status": "2",
+          "ip.src": "192.168.1.10",
+          "ip.addr": "192.168.1.10",
+          "ip.src_host": "192.168.1.10",
+          "ip.host": "192.168.1.10",
+          "ip.dst": "192.168.1.12",
+          "ip.addr": "192.168.1.12",
+          "ip.dst_host": "192.168.1.12",
+          "ip.host": "192.168.1.12",
+          "ip.stream": "0"
+        },
+        "tcp": {
+          "tcp.srcport": "3955",
+          "tcp.dstport": "443",
+          "tcp.port": "3955",
+          "tcp.port": "443",
+          "tcp.stream": "149",
+          "tcp.stream.pnum": "13",
+          "tcp.completeness": "31",
+          "tcp.completeness_tree": {
+            "tcp.completeness.rst": "0",
+            "tcp.completeness.fin": "1",
+            "tcp.completeness.data": "1",
+            "tcp.completeness.ack": "1",
+            "tcp.completeness.syn-ack": "1",
+            "tcp.completeness.syn": "1",
+            "tcp.completeness.str": "·FDASS"
+          },
+          "tcp.len": "151",
+          "tcp.seq": "2343",
+          "tcp.seq_raw": "2290522813",
+          "tcp.nxtseq": "2494",
+          "tcp.ack": "994",
+          "tcp.ack_raw": "565187697",
+          "tcp.hdr_len": "20",
+          "tcp.flags": "0x0018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ae": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ece": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "·······AP···"
+          },
+          "tcp.window_size_value": "64542",
+          "tcp.window_size": "64542",
+          "tcp.window_size_scalefactor": "-2",
+          "tcp.checksum": "0xd318",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "Timestamps": {
+            "tcp.time_relative": "0.407626000",
+            "tcp.time_delta": "0.000073000"
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.001355000",
+            "tcp.analysis.bytes_in_flight": "472",
+            "tcp.analysis.push_bytes_sent": "151"
+          },
+          "tcp.stream.client.contiguity_count": "1",
+          "tcp.stream.server.contiguity_count": "1",
+          "tcp.payload": "17:03:03:00:92:27:08:48:99:fb:e6:bb:f2:57:9b:69:ec:02:df:4c:70:b5:bd:53:67:4a:29:02:82:9c:41:cc:b3:dc:bc:df:c8:cc:f9:44:a5:9b:91:7e:7c:84:b4:de:99:b6:ff:6c:89:5d:66:50:c8:2e:e3:90:27:75:3d:e7:2d:d3:26:08:69:a5:32:a3:44:02:9b:20:00:d3:f0:e4:3e:38:05:c7:06:20:a4:02:99:d9:c0:51:49:fb:78:41:35:47:0b:6f:d5:a9:e9:b2:1a:10:5b:12:59:0e:ff:3e:28:3f:4b:0a:55:3c:3c:b0:8f:79:28:c3:aa:e2:fd:db:0b:c9:e0:b3:c0:27:6f:43:83:34:ef:36:9b:10:f0:f5:8e:f6:06:95:2d:ad:cf"
+        },
+        "tls": {
+          "tls.stream": "149",
+          "tls.record": {
+            "tls.record.opaque_type": "23",
+            "tls.record.version": "0x0303",
+            "tls.record.length": "146",
+            "tls.record.content_type": "23",
+            "tls.record.sequence_number": "1",
+            "tls.app_data": "27:08:48:99:fb:e6:bb:f2:57:9b:69:ec:02:df:4c:70:b5:bd:53:67:4a:29:02:82:9c:41:cc:b3:dc:bc:df:c8:cc:f9:44:a5:9b:91:7e:7c:84:b4:de:99:b6:ff:6c:89:5d:66:50:c8:2e:e3:90:27:75:3d:e7:2d:d3:26:08:69:a5:32:a3:44:02:9b:20:00:d3:f0:e4:3e:38:05:c7:06:20:a4:02:99:d9:c0:51:49:fb:78:41:35:47:0b:6f:d5:a9:e9:b2:1a:10:5b:12:59:0e:ff:3e:28:3f:4b:0a:55:3c:3c:b0:8f:79:28:c3:aa:e2:fd:db:0b:c9:e0:b3:c0:27:6f:43:83:34:ef:36:9b:10:f0:f5:8e:f6:06:95:2d:ad:cf",
+            "tls.app_data_proto": "Hypertext Transfer Protocol"
+          },
+          "tls.segment.data": "7b:22:6a:73:6f:6e:72:70:63:22:3a:20:22:32:2e:30:22:2c:20:22:6d:65:74:68:6f:64:22:3a:20:22:50:6c:63:50:72:6f:67:72:61:6d:2e:57:72:69:74:65:22:2c:20:22:69:64:22:3a:20:31:35:30:2c:20:22:70:61:72:61:6d:73:22:3a:20:7b:22:76:61:72:22:3a:20:22:5c:22:44:57:5f:57:45:42:5c:22:2e:51:42:30:22:2c:20:22:6d:6f:64:65:22:3a:20:22:73:69:6d:70:6c:65:22:2c:20:22:76:61:6c:75:65:22:3a:20:74:72:75:65:7d:7d"
+        },
+        "tls.segments": {
+          "tls.segment": "3298",
+          "tls.segment": "3299",
+          "tls.segment.count": "2",
+          "tls.reassembled.length": "354",
+          "tls.reassembled.data": "50:4f:53:54:20:2f:61:70:69:2f:6a:73:6f:6e:72:70:63:20:48:54:54:50:2f:31:2e:31:0d:0a:41:63:63:65:70:74:2d:45:6e:63:6f:64:69:6e:67:3a:20:69:64:65:6e:74:69:74:79:0d:0a:43:6f:6e:74:65:6e:74:2d:4c:65:6e:67:74:68:3a:20:31:32:39:0d:0a:48:6f:73:74:3a:20:31:39:32:2e:31:36:38:2e:31:2e:31:32:0d:0a:55:73:65:72:2d:41:67:65:6e:74:3a:20:50:79:74:68:6f:6e:2d:75:72:6c:6c:69:62:2f:33:2e:31:34:0d:0a:43:6f:6e:74:65:6e:74:2d:54:79:70:65:3a:20:61:70:70:6c:69:63:61:74:69:6f:6e:2f:6a:73:6f:6e:0d:0a:58:2d:41:75:74:68:2d:54:6f:6b:65:6e:3a:20:2b:49:42:39:4a:4e:55:67:4d:39:33:52:30:47:39:6b:70:30:47:7a:51:55:6c:6e:61:77:43:7a:0d:0a:43:6f:6e:6e:65:63:74:69:6f:6e:3a:20:63:6c:6f:73:65:0d:0a:0d:0a:7b:22:6a:73:6f:6e:72:70:63:22:3a:20:22:32:2e:30:22:2c:20:22:6d:65:74:68:6f:64:22:3a:20:22:50:6c:63:50:72:6f:67:72:61:6d:2e:57:72:69:74:65:22:2c:20:22:69:64:22:3a:20:31:35:30:2c:20:22:70:61:72:61:6d:73:22:3a:20:7b:22:76:61:72:22:3a:20:22:5c:22:44:57:5f:57:45:42:5c:22:2e:51:42:30:22:2c:20:22:6d:6f:64:65:22:3a:20:22:73:69:6d:70:6c:65:22:2c:20:22:76:61:6c:75:65:22:3a:20:74:72:75:65:7d:7d"
+        },
+        "http": {
+          "POST /api/jsonrpc HTTP/1.1\\r\\n": {
+            "http.request.method": "POST",
+            "http.request.uri": "/api/jsonrpc",
+            "http.request.version": "HTTP/1.1"
+          },
+          "http.accept_encoding": "identity",
+          "http.request.line": "Accept-Encoding: identity\r\n",
+          "http.content_length_header": "129",
+          "http.content_length_header_tree": {
+            "http.content_length": "129"
+          },
+          "http.request.line": "Content-Length: 129\r\n",
+          "http.host": "192.168.1.12",
+          "http.request.line": "Host: 192.168.1.12\r\n",
+          "http.user_agent": "Python-urllib/3.14",
+          "http.request.line": "User-Agent: Python-urllib/3.14\r\n",
+          "http.content_type": "application/json",
+          "http.request.line": "Content-Type: application/json\r\n",
+          "http.request.line": "X-Auth-Token: ***REDACTED***\r\n",
+          "http.connection": "close",
+          "http.request.line": "Connection: close\r\n",
+          "\\r\\n": "",
+          "http.request": "1",
+          "http.response_in": "3306",
+          "http.request.full_uri": "https://192.168.1.12/api/jsonrpc",
+          "http.file_data": "7b:22:6a:73:6f:6e:72:70:63:22:3a:20:22:32:2e:30:22:2c:20:22:6d:65:74:68:6f:64:22:3a:20:22:50:6c:63:50:72:6f:67:72:61:6d:2e:57:72:69:74:65:22:2c:20:22:69:64:22:3a:20:31:35:30:2c:20:22:70:61:72:61:6d:73:22:3a:20:7b:22:76:61:72:22:3a:20:22:5c:22:44:57:5f:57:45:42:5c:22:2e:51:42:30:22:2c:20:22:6d:6f:64:65:22:3a:20:22:73:69:6d:70:6c:65:22:2c:20:22:76:61:6c:75:65:22:3a:20:74:72:75:65:7d:7d"
+        },
+        "json": {
+          "json.object": "{\"jsonrpc\": \"2.0\", \"method\": \"PlcProgram.Write\", \"id\": 150, \"params\": {\"var\": \"\\\"DW_WEB\\\".QB0\", \"mode\": \"simple\", \"value\": true}}",
+          "json.object_tree": {
+            "json.member": "jsonrpc",
+            "json.member_tree": {
+              "json.path_with_value": "/jsonrpc:2.0",
+              "json.member_with_value": "jsonrpc:2.0",
+              "json.value.string": "2.0",
+              "json.key": "jsonrpc",
+              "json.path": "/jsonrpc"
+            },
+            "json.member": "method",
+            "json.member_tree": {
+              "json.path_with_value": "/method:PlcProgram.Write",
+              "json.member_with_value": "method:PlcProgram.Write",
+              "json.value.string": "PlcProgram.Write",
+              "json.key": "method",
+              "json.path": "/method"
+            },
+            "json.member": "id",
+            "json.member_tree": {
+              "json.path_with_value": "/id:150",
+              "json.member_with_value": "id:150",
+              "json.value.number": "150",
+              "json.key": "id",
+              "json.path": "/id"
+            },
+            "json.member": "params",
+            "json.member_tree": {
+              "json.object": "{\"var\": \"\\\"DW_WEB\\\".QB0\", \"mode\": \"simple\", \"value\": true}",
+              "json.object_tree": {
+                "json.member": "var",
+                "json.member_tree": {
+                  "json.path_with_value": "/params/var:\\\"DW_WEB\\\".QB0",
+                  "json.member_with_value": "var:\\\"DW_WEB\\\".QB0",
+                  "json.value.string": "\\\"DW_WEB\\\".QB0",
+                  "json.key": "var",
+                  "json.path": "/params/var"
+                },
+                "json.member": "mode",
+                "json.member_tree": {
+                  "json.path_with_value": "/params/mode:simple",
+                  "json.member_with_value": "mode:simple",
+                  "json.value.string": "simple",
+                  "json.key": "mode",
+                  "json.path": "/params/mode"
+                },
+                "json.member": "value",
+                "json.member_tree": {
+                  "json.path_with_value": "/params/value:true",
+                  "json.member_with_value": "value:true",
+                  "json.value.true": "",
+                  "json.key": "value",
+                  "json.path": "/params/value"
+                }
+              },
+              "json.key": "params",
+              "json.path": "/params"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2026-07-02",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "en6",
+            "frame.interface_description": "USB 10/100/1000 LAN"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "2026-07-02T16:01:31.304123000Z",
+          "frame.time_utc": "2026-07-02T16:01:31.304123000Z",
+          "frame.time_epoch": "2026-07-02T16:01:31.304123000Z",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_delta": "0.000003000",
+          "frame.time_delta_displayed": "10.642625000",
+          "frame.time_relative": "60.983384000",
+          "frame.number": "4002",
+          "frame.len": "206",
+          "frame.cap_len": "206",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:tls:http:json",
+          "frame.encoding": "0",
+          "frame.coloring_rule.name": "HTTP",
+          "frame.coloring_rule.string": "http || tcp.port == 80 || http2"
+        },
+        "eth": {
+          "eth.dst": "4c:e7:05:e7:5b:8a",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "SiemensIndus_e7:5b:8a",
+            "eth.dst.oui": "5039877",
+            "eth.dst.oui_resolved": "Siemens Industrial Automation Products Ltd., Chengdu",
+            "eth.dst.lg": "0",
+            "eth.dst.ig": "0",
+            "eth.addr": "4c:e7:05:e7:5b:8a",
+            "eth.addr_resolved": "SiemensIndus_e7:5b:8a",
+            "eth.addr.oui": "5039877",
+            "eth.addr.oui_resolved": "Siemens Industrial Automation Products Ltd., Chengdu",
+            "eth.lg": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "08:97:98:61:02:2d",
+          "eth.src_tree": {
+            "eth.src_resolved": "CompalInform_61:02:2d",
+            "eth.src.oui": "563096",
+            "eth.src.oui_resolved": "Compal Information (Kunshan) Co., Ltd.",
+            "eth.src.lg": "0",
+            "eth.src.ig": "0",
+            "eth.addr": "08:97:98:61:02:2d",
+            "eth.addr_resolved": "CompalInform_61:02:2d",
+            "eth.addr.oui": "563096",
+            "eth.addr.oui_resolved": "Compal Information (Kunshan) Co., Ltd.",
+            "eth.lg": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x0800",
+          "eth.stream": "0"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "192",
+          "ip.id": "0x01f9",
+          "ip.flags": "0x02",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "128",
+          "ip.proto": "6",
+          "ip.checksum": "0x74d8",
+          "ip.checksum.status": "2",
+          "ip.src": "192.168.1.10",
+          "ip.addr": "192.168.1.10",
+          "ip.src_host": "192.168.1.10",
+          "ip.host": "192.168.1.10",
+          "ip.dst": "192.168.1.12",
+          "ip.addr": "192.168.1.12",
+          "ip.dst_host": "192.168.1.12",
+          "ip.host": "192.168.1.12",
+          "ip.stream": "0"
+        },
+        "tcp": {
+          "tcp.srcport": "3987",
+          "tcp.dstport": "443",
+          "tcp.port": "3987",
+          "tcp.port": "443",
+          "tcp.stream": "181",
+          "tcp.stream.pnum": "13",
+          "tcp.completeness": "31",
+          "tcp.completeness_tree": {
+            "tcp.completeness.rst": "0",
+            "tcp.completeness.fin": "1",
+            "tcp.completeness.data": "1",
+            "tcp.completeness.ack": "1",
+            "tcp.completeness.syn-ack": "1",
+            "tcp.completeness.syn": "1",
+            "tcp.completeness.str": "·FDASS"
+          },
+          "tcp.len": "152",
+          "tcp.seq": "2343",
+          "tcp.seq_raw": "3585873091",
+          "tcp.nxtseq": "2495",
+          "tcp.ack": "993",
+          "tcp.ack_raw": "309200199",
+          "tcp.hdr_len": "20",
+          "tcp.flags": "0x0018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ae": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ece": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "·······AP···"
+          },
+          "tcp.window_size_value": "64543",
+          "tcp.window_size": "64543",
+          "tcp.window_size_scalefactor": "-2",
+          "tcp.checksum": "0x4d8e",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "Timestamps": {
+            "tcp.time_relative": "0.626304000",
+            "tcp.time_delta": "0.000003000"
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.001432000",
+            "tcp.analysis.bytes_in_flight": "473",
+            "tcp.analysis.push_bytes_sent": "152"
+          },
+          "tcp.stream.client.contiguity_count": "1",
+          "tcp.stream.server.contiguity_count": "1",
+          "tcp.payload": "17:03:03:00:93:67:03:a9:25:8e:05:37:e0:e1:03:fe:f1:2e:f9:1f:43:79:48:09:32:1b:2d:85:35:ce:d0:1e:5e:b5:3b:da:84:0f:50:a0:ee:b7:52:c0:01:09:3e:d8:30:9c:27:c8:52:c7:1a:53:f9:42:c6:47:96:96:9c:c1:c4:c4:ed:6f:d2:51:52:e5:c4:5d:5e:b2:4a:e5:d1:97:17:12:bf:78:37:6e:02:ee:f6:0d:dc:93:a1:f4:3e:5c:19:0d:a7:34:9b:9c:6d:5c:a6:d7:e7:33:4c:e2:4d:22:41:a0:98:75:f2:0e:2c:ff:0a:a7:b1:4b:ec:3a:c7:e4:07:af:74:82:e8:9d:2e:63:8d:87:68:15:18:b5:4d:eb:93:66:3c:c8:48:8a:4c:0d"
+        },
+        "tls": {
+          "tls.stream": "181",
+          "tls.record": {
+            "tls.record.opaque_type": "23",
+            "tls.record.version": "0x0303",
+            "tls.record.length": "147",
+            "tls.record.content_type": "23",
+            "tls.record.sequence_number": "1",
+            "tls.app_data": "67:03:a9:25:8e:05:37:e0:e1:03:fe:f1:2e:f9:1f:43:79:48:09:32:1b:2d:85:35:ce:d0:1e:5e:b5:3b:da:84:0f:50:a0:ee:b7:52:c0:01:09:3e:d8:30:9c:27:c8:52:c7:1a:53:f9:42:c6:47:96:96:9c:c1:c4:c4:ed:6f:d2:51:52:e5:c4:5d:5e:b2:4a:e5:d1:97:17:12:bf:78:37:6e:02:ee:f6:0d:dc:93:a1:f4:3e:5c:19:0d:a7:34:9b:9c:6d:5c:a6:d7:e7:33:4c:e2:4d:22:41:a0:98:75:f2:0e:2c:ff:0a:a7:b1:4b:ec:3a:c7:e4:07:af:74:82:e8:9d:2e:63:8d:87:68:15:18:b5:4d:eb:93:66:3c:c8:48:8a:4c:0d",
+            "tls.app_data_proto": "Hypertext Transfer Protocol"
+          },
+          "tls.segment.data": "7b:22:6a:73:6f:6e:72:70:63:22:3a:20:22:32:2e:30:22:2c:20:22:6d:65:74:68:6f:64:22:3a:20:22:50:6c:63:50:72:6f:67:72:61:6d:2e:57:72:69:74:65:22:2c:20:22:69:64:22:3a:20:31:38:32:2c:20:22:70:61:72:61:6d:73:22:3a:20:7b:22:76:61:72:22:3a:20:22:5c:22:44:57:5f:57:45:42:5c:22:2e:51:42:30:22:2c:20:22:6d:6f:64:65:22:3a:20:22:73:69:6d:70:6c:65:22:2c:20:22:76:61:6c:75:65:22:3a:20:66:61:6c:73:65:7d:7d"
+        },
+        "tls.segments": {
+          "tls.segment": "4001",
+          "tls.segment": "4002",
+          "tls.segment.count": "2",
+          "tls.reassembled.length": "355",
+          "tls.reassembled.data": "50:4f:53:54:20:2f:61:70:69:2f:6a:73:6f:6e:72:70:63:20:48:54:54:50:2f:31:2e:31:0d:0a:41:63:63:65:70:74:2d:45:6e:63:6f:64:69:6e:67:3a:20:69:64:65:6e:74:69:74:79:0d:0a:43:6f:6e:74:65:6e:74:2d:4c:65:6e:67:74:68:3a:20:31:33:30:0d:0a:48:6f:73:74:3a:20:31:39:32:2e:31:36:38:2e:31:2e:31:32:0d:0a:55:73:65:72:2d:41:67:65:6e:74:3a:20:50:79:74:68:6f:6e:2d:75:72:6c:6c:69:62:2f:33:2e:31:34:0d:0a:43:6f:6e:74:65:6e:74:2d:54:79:70:65:3a:20:61:70:70:6c:69:63:61:74:69:6f:6e:2f:6a:73:6f:6e:0d:0a:58:2d:41:75:74:68:2d:54:6f:6b:65:6e:3a:20:2b:49:42:39:4a:4e:55:67:4d:39:33:52:30:47:39:6b:70:30:47:7a:51:55:6c:6e:61:77:43:7a:0d:0a:43:6f:6e:6e:65:63:74:69:6f:6e:3a:20:63:6c:6f:73:65:0d:0a:0d:0a:7b:22:6a:73:6f:6e:72:70:63:22:3a:20:22:32:2e:30:22:2c:20:22:6d:65:74:68:6f:64:22:3a:20:22:50:6c:63:50:72:6f:67:72:61:6d:2e:57:72:69:74:65:22:2c:20:22:69:64:22:3a:20:31:38:32:2c:20:22:70:61:72:61:6d:73:22:3a:20:7b:22:76:61:72:22:3a:20:22:5c:22:44:57:5f:57:45:42:5c:22:2e:51:42:30:22:2c:20:22:6d:6f:64:65:22:3a:20:22:73:69:6d:70:6c:65:22:2c:20:22:76:61:6c:75:65:22:3a:20:66:61:6c:73:65:7d:7d"
+        },
+        "http": {
+          "POST /api/jsonrpc HTTP/1.1\\r\\n": {
+            "http.request.method": "POST",
+            "http.request.uri": "/api/jsonrpc",
+            "http.request.version": "HTTP/1.1"
+          },
+          "http.accept_encoding": "identity",
+          "http.request.line": "Accept-Encoding: identity\r\n",
+          "http.content_length_header": "130",
+          "http.content_length_header_tree": {
+            "http.content_length": "130"
+          },
+          "http.request.line": "Content-Length: 130\r\n",
+          "http.host": "192.168.1.12",
+          "http.request.line": "Host: 192.168.1.12\r\n",
+          "http.user_agent": "Python-urllib/3.14",
+          "http.request.line": "User-Agent: Python-urllib/3.14\r\n",
+          "http.content_type": "application/json",
+          "http.request.line": "Content-Type: application/json\r\n",
+          "http.request.line": "X-Auth-Token: ***REDACTED***\r\n",
+          "http.connection": "close",
+          "http.request.line": "Connection: close\r\n",
+          "\\r\\n": "",
+          "http.request": "1",
+          "http.response_in": "4009",
+          "http.request.full_uri": "https://192.168.1.12/api/jsonrpc",
+          "http.file_data": "7b:22:6a:73:6f:6e:72:70:63:22:3a:20:22:32:2e:30:22:2c:20:22:6d:65:74:68:6f:64:22:3a:20:22:50:6c:63:50:72:6f:67:72:61:6d:2e:57:72:69:74:65:22:2c:20:22:69:64:22:3a:20:31:38:32:2c:20:22:70:61:72:61:6d:73:22:3a:20:7b:22:76:61:72:22:3a:20:22:5c:22:44:57:5f:57:45:42:5c:22:2e:51:42:30:22:2c:20:22:6d:6f:64:65:22:3a:20:22:73:69:6d:70:6c:65:22:2c:20:22:76:61:6c:75:65:22:3a:20:66:61:6c:73:65:7d:7d"
+        },
+        "json": {
+          "json.object": "{\"jsonrpc\": \"2.0\", \"method\": \"PlcProgram.Write\", \"id\": 182, \"params\": {\"var\": \"\\\"DW_WEB\\\".QB0\", \"mode\": \"simple\", \"value\": false}}",
+          "json.object_tree": {
+            "json.member": "jsonrpc",
+            "json.member_tree": {
+              "json.path_with_value": "/jsonrpc:2.0",
+              "json.member_with_value": "jsonrpc:2.0",
+              "json.value.string": "2.0",
+              "json.key": "jsonrpc",
+              "json.path": "/jsonrpc"
+            },
+            "json.member": "method",
+            "json.member_tree": {
+              "json.path_with_value": "/method:PlcProgram.Write",
+              "json.member_with_value": "method:PlcProgram.Write",
+              "json.value.string": "PlcProgram.Write",
+              "json.key": "method",
+              "json.path": "/method"
+            },
+            "json.member": "id",
+            "json.member_tree": {
+              "json.path_with_value": "/id:182",
+              "json.member_with_value": "id:182",
+              "json.value.number": "182",
+              "json.key": "id",
+              "json.path": "/id"
+            },
+            "json.member": "params",
+            "json.member_tree": {
+              "json.object": "{\"var\": \"\\\"DW_WEB\\\".QB0\", \"mode\": \"simple\", \"value\": false}",
+              "json.object_tree": {
+                "json.member": "var",
+                "json.member_tree": {
+                  "json.path_with_value": "/params/var:\\\"DW_WEB\\\".QB0",
+                  "json.member_with_value": "var:\\\"DW_WEB\\\".QB0",
+                  "json.value.string": "\\\"DW_WEB\\\".QB0",
+                  "json.key": "var",
+                  "json.path": "/params/var"
+                },
+                "json.member": "mode",
+                "json.member_tree": {
+                  "json.path_with_value": "/params/mode:simple",
+                  "json.member_with_value": "mode:simple",
+                  "json.value.string": "simple",
+                  "json.key": "mode",
+                  "json.path": "/params/mode"
+                },
+                "json.member": "value",
+                "json.member_tree": {
+                  "json.path_with_value": "/params/value:false",
+                  "json.member_with_value": "value:false",
+                  "json.value.false": "",
+                  "json.key": "value",
+                  "json.path": "/params/value"
+                }
+              },
+              "json.key": "params",
+              "json.path": "/params"
+            }
+          }
+        }
+      }
+    }
+  }
+]

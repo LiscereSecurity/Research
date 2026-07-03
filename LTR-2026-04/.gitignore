@@ -1,0 +1,4 @@
+.DS_Store
+*.log
+*_keys.log
+_local_secrets/

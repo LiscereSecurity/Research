@@ -1,0 +1,173 @@
+/*
+ * Liscere Technical Report series stylesheet.
+ * Used by build_ltr.py to render an LTR markdown file to a series-styled PDF.
+ */
+
+@page {
+    size: A4;
+    margin: 2.2cm 2cm 2cm 2cm;
+
+    @top-left {
+        content: string(series-header-left);
+        font-family: Georgia, serif;
+        font-size: 9pt;
+        color: #555;
+    }
+    @top-right {
+        content: "Technical Report";
+        font-family: Georgia, serif;
+        font-size: 9pt;
+        color: #555;
+    }
+    @bottom-left {
+        content: string(doc-id);
+        font-family: Georgia, serif;
+        font-size: 8pt;
+        color: #777;
+    }
+    @bottom-center {
+        content: counter(page);
+        font-family: Georgia, serif;
+        font-size: 8pt;
+        color: #777;
+    }
+    @bottom-right {
+        content: string(doc-url);
+        font-family: Georgia, serif;
+        font-size: 8pt;
+        color: #777;
+    }
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 10.2pt;
+    line-height: 1.5;
+    color: #1a1a1a;
+    text-align: justify;
+}
+
+/* Front-matter strings picked up into the running header/footer. */
+.docmeta { display: none; string-set: none; }
+.docmeta .series-header-left { string-set: series-header-left content(); }
+.docmeta .doc-id { string-set: doc-id content(); }
+.docmeta .doc-url { string-set: doc-url content(); }
+
+.title-block {
+    text-align: center;
+    margin-bottom: 1.2em;
+    padding-bottom: 1em;
+    border-bottom: 1.5px solid #333;
+}
+.title-block h1 {
+    font-size: 16pt;
+    line-height: 1.3;
+    margin: 0 0 0.6em 0;
+    font-weight: bold;
+    color: #111;
+}
+.title-block .author {
+    font-size: 11pt;
+    margin: 0.2em 0 0 0;
+}
+.title-block .affil {
+    font-size: 10pt;
+    color: #444;
+    margin: 0.1em 0;
+}
+.title-block .dateline {
+    font-size: 8.5pt;
+    color: #666;
+    margin-top: 0.6em;
+}
+
+h2 {
+    font-size: 12pt;
+    margin-top: 1.4em;
+    margin-bottom: 0.5em;
+    color: #111;
+    border-bottom: 0.5px solid #ccc;
+    padding-bottom: 0.15em;
+}
+h3 {
+    font-size: 10.8pt;
+    margin-top: 1.1em;
+    margin-bottom: 0.35em;
+    color: #222;
+}
+p { margin: 0.5em 0; }
+strong { color: #111; }
+
+/* Abstract, marked explicitly in the markdown with "## Abstract {.abstract}". */
+h2.abstract {
+    text-align: center;
+    border-bottom: none;
+    font-size: 11pt;
+    margin-top: 0.5em;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0.9em 0;
+    font-size: 9pt;
+    text-align: left;
+}
+th, td {
+    border: 0.5px solid #999;
+    padding: 4px 7px;
+    text-align: left;
+    vertical-align: top;
+}
+th {
+    background: #f0f0f0;
+    font-weight: bold;
+}
+
+hr {
+    border: none;
+    border-top: 0.5px solid #ddd;
+    margin: 1.2em 0;
+}
+
+code {
+    font-family: 'Courier New', monospace;
+    font-size: 9pt;
+    background: #f5f5f5;
+    padding: 0 2px;
+}
+
+/* Figures. Normal figures render an image at full content width with a caption
+ * below. Stacked figures (class="stacked") render two images one above the
+ * other, each full width, with a single caption below both. */
+figure {
+    margin: 1.1em 0;
+    text-align: center;
+    page-break-inside: avoid;
+}
+figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+figure.stacked img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+figure.stacked img + img {
+    margin-top: 0.6em;
+}
+figcaption {
+    font-size: 8.5pt;
+    color: #555;
+    text-align: left;
+    margin-top: 0.4em;
+    line-height: 1.35;
+}
+
+/* Keep table rows and headings with their content. */
+tr { page-break-inside: avoid; }
+h2, h3 { page-break-after: avoid; }
