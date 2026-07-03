@@ -82,16 +82,11 @@ def build_html(meta, body_md):
         extensions=["tables", "sane_lists", "attr_list", "md_in_html"],
     )
 
-    # The .docmeta block feeds the running header/footer via CSS string-set.
-    # It is hidden by the stylesheet. The footer id combines series + id.
-    footer_id = f"{meta['series']} · {meta['id']}"
-    docmeta = (
-        '<div class="docmeta">'
-        f'<span class="series-header-left">{meta["series"].split()[0]}</span>'
-        f'<span class="doc-id">{footer_id}</span>'
-        f'<span class="doc-url">{meta["url"]}</span>'
-        "</div>"
-    )
+    # The .docmeta block feeds the footer-left document id via CSS string-set.
+    # The stylesheet takes it out of flow (not display:none, which would set no
+    # string). "Liscere", "Technical Report" and "liscere.com" are fixed
+    # literals in the stylesheet, so only the per-report id needs to travel here.
+    docmeta = f'<div class="docmeta">{meta["id"]}</div>'
 
     dateline = (
         f'{meta["date"]} · {meta["series"]} · '
