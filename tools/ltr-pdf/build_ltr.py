@@ -82,11 +82,15 @@ def build_html(meta, body_md):
         extensions=["tables", "sane_lists", "attr_list", "md_in_html"],
     )
 
-    # The .docmeta block feeds the footer-left document id via CSS string-set.
-    # The stylesheet takes it out of flow (not display:none, which would set no
-    # string). "Liscere", "Technical Report" and "liscere.com" are fixed
-    # literals in the stylesheet, so only the per-report id needs to travel here.
+    # The .docmeta block feeds the footer-left document id, and .docseries feeds
+    # the header-right label, both via CSS running elements (position: running +
+    # element()). "Liscere" and "liscere.com" stay fixed literals in the
+    # stylesheet; the id and the series label travel per report. The header label
+    # is the series with the leading "Liscere " dropped: "Technical Report" for
+    # the LTR series, "Briefing" for the LB series.
     docmeta = f'<div class="docmeta">{meta["id"]}</div>'
+    header_label = meta["series"].replace("Liscere ", "", 1)
+    docseries = f'<div class="docseries">{header_label}</div>'
 
     dateline = (
         f'{meta["date"]} · {meta["series"]} · '
@@ -105,7 +109,7 @@ def build_html(meta, body_md):
     return (
         "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"utf-8\">\n"
         "</head>\n<body>\n"
-        f"{docmeta}\n{title_block}\n{body_html}\n"
+        f"{docmeta}\n{docseries}\n{title_block}\n{body_html}\n"
         "</body>\n</html>"
     )
 
