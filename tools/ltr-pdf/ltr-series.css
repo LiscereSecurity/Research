@@ -201,6 +201,21 @@ figcaption {
     line-height: 1.35;
 }
 
+/* Table footnotes — the (*, †) notes beneath a table caption. Smaller and muted
+ * like a figure caption, set clearly apart from the caption above so the two do
+ * not run together. Authored in the markdown as
+ * <div class="table-notes" markdown="1"> with one paragraph per note. */
+.table-notes {
+    font-size: 8.5pt;
+    color: #3b4544;
+    text-align: left;
+    line-height: 1.35;
+    margin-top: 0.55em;
+}
+.table-notes p {
+    margin: 0.25em 0;
+}
+
 /* Keep table rows and headings with their content. */
 tr { page-break-inside: avoid; }
 h2, h3 { page-break-after: avoid; }
