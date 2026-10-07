@@ -98,6 +98,16 @@ body {
     color: #3b4544;
     margin-top: 0.3em;
 }
+/* Rights statement and revision note, under the date line on the title page. */
+.title-block .rights,
+.title-block .revised {
+    font-size: 8.5pt;
+    color: #3b4544;
+    margin-top: 0.25em;
+}
+.title-block .revised {
+    font-style: italic;
+}
 
 /* Abstract — compact, indented both sides, smaller than body (Framework).
  * Authored in the markdown as <div class="abstract" markdown="1"> ... </div>. */

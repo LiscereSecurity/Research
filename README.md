@@ -19,10 +19,17 @@ LTR-XXXX-XX/
 
 ## Published documents
 
-The published version of each report is a PDF. Those PDFs live at liscere.com.
-This repository holds the source material behind them, not the published PDFs.
+The published version of each report is a PDF, served at liscere.com. Where a
+report is built from a Markdown source in this repository, the built PDF sits
+next to it under `report/`. Reports revised after publication carry a dated
+revision note on the title page.
 
 ## Licence
 
-The contents of this repository are released under the MIT Licence. See
+Code and data in this repository are released under the MIT Licence. See
 [LICENSE](LICENSE).
+
+The reports themselves, meaning the report sources (Markdown), their figures and
+the built PDFs, are © 2026 Liscere sp. z o.o. and licensed under
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), as stated on each
+report's title page.

@@ -39,6 +39,20 @@ url: "liscere.com"
 ---
 ```
 
+Optional keys:
+
+- `licence`: the rights statement printed on the title page under the date line.
+- `revised`: a dated revision note printed under the licence line, for example
+  `"Revised 7 October 2026: <what changed>"`.
+- `keywords`: PDF Keywords metadata, for reports whose abstract carries no
+  `**Keywords:**` line.
+- `subject`: PDF Subject metadata; defaults to the first sentence of the abstract.
+- `pdf_date`: ISO date written to the PDF creation and modification dates.
+
+The builder sets the PDF Title, Author, Subject, Keywords and Creator from the
+front matter and the abstract only, so no machine, account or institution string
+enters the metadata.
+
 - Mark the abstract heading with `## Abstract {.abstract}`.
 - Author figures as HTML `<figure>` blocks with image `src` relative to the
   markdown file's directory (e.g. `figures/fig1.png`). Use

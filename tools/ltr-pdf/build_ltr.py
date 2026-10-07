@@ -97,21 +97,78 @@ def build_html(meta, body_md):
         f'{meta["id"]} · {meta["version"]}'
     )
 
+    # Rights and revision lines sit on the title page, under the date line. Both
+    # are optional front-matter keys: "licence" (the full rights statement) and
+    # "revised" (a short, dated description of what changed).
+    rights = (
+        f'<div class="rights">{meta["licence"]}</div>' if meta.get("licence") else ""
+    )
+    revised = (
+        f'<div class="revised">{meta["revised"]}</div>' if meta.get("revised") else ""
+    )
+
     title_block = (
         '<div class="title-block">'
         f'<h1>{meta["title"]}</h1>'
         f'<div class="author">{meta["author"]}</div>'
         f'<div class="affil">{meta.get("affiliation", "Liscere")}</div>'
         f'<div class="dateline">{dateline}</div>'
+        f"{rights}{revised}"
         "</div>"
     )
 
     return (
         "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"utf-8\">\n"
+        f"{pdf_metadata(meta, body_md)}"
         "</head>\n<body>\n"
         f"{docmeta}\n{docseries}\n{title_block}\n{body_html}\n"
         "</body>\n</html>"
     )
+
+
+def _plain(text):
+    """Markdown/HTML fragment to plain text for PDF metadata fields."""
+    text = re.sub(r"<br\s*/?>", " ", text)
+    text = re.sub(r"<[^>]+>", "", text)
+    text = re.sub(r"\[[^\]]*\]", "", text)          # citation markers
+    text = text.replace("**", "").replace("*", "").replace("`", "")
+    text = re.sub(r"\s+", " ", text)
+    return re.sub(r"\s+([;,.:])", r"\1", text).strip()
+
+
+def pdf_metadata(meta, body_md):
+    """<head> tags WeasyPrint maps to the PDF Info dictionary: Title, Author,
+    Subject (first sentence of the abstract), Keywords and Creator. Values come
+    from the front matter and the abstract only, so no machine, account or
+    institution string can enter the metadata."""
+    esc = lambda v: (v.replace("&", "&amp;").replace('"', "&quot;")
+                      .replace("<", "&lt;").replace(">", "&gt;"))
+    title = _plain(meta["title"])
+    subject = meta.get("subject")
+    if not subject:
+        m = re.search(r'<div class="abstract"[^>]*>(.*?)</div>', body_md, re.S)
+        abstract = m.group(1) if m else ""
+        paras = [p for p in abstract.split("\n\n")
+                 if p.strip() and not p.strip().startswith("#")]
+        first = _plain(paras[0]) if paras else ""
+        subject = re.split(r"(?<=[.?!])\s", first, maxsplit=1)[0]
+    keywords = meta.get("keywords")
+    if not keywords:
+        m = re.search(r"\*\*Keywords:\*\*\s*(.+)", body_md)
+        keywords = _plain(m.group(1)).rstrip(".") if m else ""
+    if isinstance(keywords, (list, tuple)):
+        keywords = ", ".join(keywords)
+    tags = [
+        f'<title>{esc(title)}</title>',
+        f'<meta name="author" content="{esc(meta["author"])}">',
+        f'<meta name="description" content="{esc(subject)}">',
+        f'<meta name="keywords" content="{esc(keywords)}">',
+        '<meta name="generator" content="Liscere report builder (WeasyPrint)">',
+    ]
+    if meta.get("pdf_date"):
+        tags.append(f'<meta name="dcterms.created" content="{meta["pdf_date"]}">')
+        tags.append(f'<meta name="dcterms.modified" content="{meta["pdf_date"]}">')
+    return "\n".join(tags) + "\n"
 
 
 def main():
