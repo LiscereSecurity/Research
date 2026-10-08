@@ -40,7 +40,9 @@ instrumenting the client, and it does not represent what a passive observer sees
 
 1. **Controller.** Load the tank control logic (`code/tank_webapi.scl`) into the 100 ms cyclic
    interrupt of an S7-1200 G2, exposing `LEVEL_AI`, `PUMP_FLOW_SP`, and `VALVE_FLOW_SP` as
-   Web-accessible tags in a data block. Calibrate the flows so each operational phase lasts on
+   Web-accessible tags in a data block. Note that `tank_webapi.scl` is written against the Modbus
+   holding-register window of LTR-2026-03 (`"ModbusHR_DB".HR[...]`); on the Web API testbed the same
+   dynamics read and write the tags of `TANK_DB`, and that adapted block is not published. Calibrate the flows so each operational phase lasts on
    the order of tens of seconds.
 2. **Observe.** Capture traffic on a passive mirror port with `tshark`, as the report describes.
 3. **Characterise the channel.** Use the probes in `code/` to read the process variable and to
@@ -55,8 +57,17 @@ instrumenting the client, and it does not represent what a passive observer sees
 
 The probes take credentials from `--user`/`--password` arguments or the `PLC_USER`/`PLC_PASS`
 environment variables; no credentials are hardcoded. Session transcripts in `evidence/logs/`
-have passwords and session tokens redacted. TLS key logs are excluded from this repository and
-from version control.
+have passwords and session tokens redacted. The decrypted export `evidence/data/capB_export.json`
+has the session token redacted in every field, including the hexadecimal byte fields
+(`tls.reassembled.data` and similar), where its 28 characters are replaced by `*` (0x2a); the
+token was a short-lived session token for a laboratory controller on a private address. The
+screenshots in `report/figures/` (fig3a, fig3b) have IP addresses, MAC addresses and the session
+token masked with solid boxes. TLS key logs are excluded from this repository and from version
+control.
+
+Correction, 7 October 2026: before that date the hexadecimal fields of `capB_export.json` and the
+unmasked Figure 3a still carried the token value, contrary to the statement above. Both were
+corrected on 7 October 2026.
 
 ## Related reports
 

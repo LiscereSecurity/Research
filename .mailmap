@@ -1,0 +1,3 @@
+# Maps a former commit address to the company address, hello@liscere.com.
+# git log, shortlog and blame honour this file; it does not rewrite history.
+Bruno Salmazo <hello@liscere.com> <admin@liscere.com>

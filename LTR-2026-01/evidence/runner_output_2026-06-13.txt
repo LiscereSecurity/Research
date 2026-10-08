@@ -1,0 +1,9 @@
+SCN-MODBUS-CTX-CONFIG-MAINT-001 -> expected=ALLOW/OBS-R004 actual=ALLOW / OBS-R004 maintenance_window=true match=YES
+SCN-MODBUS-CTX-CONFIG-PROD-001 -> expected=ALERT/OBS-R002 actual=ALERT / OBS-R002 maintenance_window=false match=YES
+SCN-MODBUS-CTX-NORMAL-MAINT-001 -> expected=ALLOW/OBS-R000 actual=ALLOW / OBS-R000 maintenance_window=true match=YES
+SCN-MODBUS-CTX-RANGE-MAINT-001 -> expected=ALERT/OBS-R001 actual=ALERT / OBS-R001 maintenance_window=true match=YES
+
+Summary: 4/4 scenarios matched expected decision/rule.
+context-flip verified: ALARM_HI_SP=5 -> ALERT(prod) / ALLOW(maint); identical operation, artefact, value
+Negative controls: 2/2 held
+Evidence: studies/evidence/liscere_contextual_v0_1/summary.csv
